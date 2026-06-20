@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── Tipografía HG ── */
+    --font-sans: "Gill Sans", "Gill Sans MT", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    --font-display: var(--font-sans);
+    --font-mono: "Helvetica Neue", Arial, sans-serif;
+
+    /* ── shadcn semantic · HG Hurtado Gandini v1.1 ── */
+    --background: 30 20% 98%; /* Lienzo cálido #FBFAF9 */
+    --foreground: 0 0% 21%; /* Carbón HG #353535 */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 21%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 21%;
+    --primary: 0 0% 21%; /* Carbón HG */
+    --primary-foreground: 30 20% 98%;
+    --secondary: 24 19% 95%; /* Neutral cálido #F4F1EF */
+    --secondary-foreground: 0 0% 21%;
+    --muted: 24 19% 95%;
+    --muted-foreground: 4 7% 44%; /* Gris HG #776867 */
+    --accent: 5 30% 93%; /* Rojo HG suave #F2E8E7 */
+    --accent-foreground: 1 70% 30%; /* Rojo HG #801817 */
+    --destructive: 1 70% 30%;
+    --destructive-foreground: 30 20% 98%;
+    --border: 20 14% 82%; /* Neutral cálido #D8D0CC */
+    --input: 20 14% 82%;
+    --ring: 1 70% 30%;
+    --radius: 0.625rem;
+
+    /* ── Marca (aliases heredados para no cambiar estructura) ── */
+    --hg-carbon: #353535;
+    --hg-black: #000000;
+    --hg-gray: #776867;
+    --hg-red: #801817;
+    --hg-red-soft: #f2e8e7;
+    --hg-wine: #743537;
+    --cl-toga: var(--hg-carbon);
+    --cl-toga-700: var(--hg-black);
+    --cl-toga-300: var(--hg-gray);
+    --cl-indigo: var(--hg-red);
+    --cl-indigo-soft: var(--hg-red-soft);
+
+    /* ── Semáforo funcional HG (solo estados) ── */
+    --cl-ok: #2e7d32;
+    --cl-ok-fg: #2e7d32;
+    --cl-ok-soft: rgba(46, 125, 50, 0.12);
+    --cl-warn: #a16207;
+    --cl-warn-fg: #a16207;
+    --cl-warn-soft: rgba(161, 98, 7, 0.14);
+    --cl-risk: #801817;
+    --cl-risk-fg: #801817;
+    --cl-risk-soft: rgba(128, 24, 23, 0.1);
+    --cl-info: #94a0a9;
+    --cl-info-fg: #554b45;
+    --cl-info-soft: rgba(148, 160, 169, 0.14);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Respeta prefers-reduced-motion en toda la app (DESIGN.md §8). */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Gill Sans es la familia principal para interfaz y titulares. */
+  h1,
+  h2 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Chip de fuente — el sello de confianza (DESIGN.md §4). */
+  .chip-fuente {
+    @apply inline-flex cursor-pointer items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] leading-tight transition-colors;
+    background: var(--cl-indigo-soft);
+    color: var(--cl-indigo);
+  }
+  .chip-fuente:hover {
+    filter: brightness(0.94);
+  }
+
+  /* Badges de estado (DESIGN.md §4). Relleno = color soft; texto = color fg. */
+  .badge-calculado {
+    @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
+    background: var(--cl-ok-soft);
+    color: var(--cl-ok-fg);
+  }
+  .badge-revisar {
+    @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
+    background: var(--cl-warn-soft);
+    color: var(--cl-warn-fg);
+  }
+  .badge-revision-humana {
+    @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
+    background: var(--cl-warn-soft);
+    color: var(--cl-warn-fg);
+  }
+  .badge-bloqueado {
+    @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
+    background: var(--cl-risk-soft);
+    color: var(--cl-risk-fg);
+  }
+  .badge-info {
+    @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
+    background: var(--cl-info-soft);
+    color: var(--cl-info-fg);
+  }
+}
+
+@layer utilities {
+  /* Numerales tabulares — obligatorio en TODA cifra y tabla (DESIGN.md §3). */
+  .tnum {
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+}

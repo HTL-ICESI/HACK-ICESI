@@ -1,0 +1,4 @@
+cedula,nombre,salario_basico,promedio_variable,auxilio_transporte,dias_pendientes_vacaciones,antiguedad_anios,pago_ss_mora,ss_monto_mora,ss_due_date
+1042440655,JOSE ANDRES OSPINO BURGOS,1750905,676784.614,249095,9,1.4,false,0,
+16789012,PEDRO PEREZ GOMEZ,1500000,0,162000,15,1.0,true,180000,2026-06-25
+79000111,JUAN PEREZ,2000000,0,0,12,1.5,false,0,

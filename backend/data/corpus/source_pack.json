@@ -1,0 +1,19 @@
+{
+  "_note": "Corpus normativo semilla. David lo puebla con normas reales + radicados CSJ verificados. Patron tomado de Hackathon-Due-Legal/data/sources/source-pack.json",
+  "version_year": 2026,
+  "norms": {
+    "CST:art. 249": { "norm_id": "CST", "article": "art. 249", "title": "Auxilio de cesantia", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 306": { "norm_id": "CST", "article": "art. 306", "title": "Prima de servicios", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 186": { "norm_id": "CST", "article": "art. 186", "title": "Vacaciones anuales remuneradas", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 46": { "norm_id": "CST", "article": "art. 46", "title": "Contrato a termino fijo - renovacion y preaviso de no prorroga", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 64": { "norm_id": "CST", "article": "art. 64", "title": "Indemnizacion por despido sin justa causa", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 65": { "norm_id": "CST", "article": "art. 65", "title": "Indemnizacion por mora", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CST:art. 115": { "norm_id": "CST", "article": "art. 115", "title": "Procedimiento para sanciones disciplinarias", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CN:art. 29": { "norm_id": "CN", "article": "art. 29", "title": "Debido proceso", "url": "https://www.constitucioncolombia.com/titulo-2/capitulo-1/articulo-29", "verified": true },
+    "Ley 2101/2021:art. 3": { "norm_id": "Ley 2101/2021", "article": "art. 3", "title": "Reduccion jornada a 42h", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "Ley 2466/2025:art. 5": { "norm_id": "Ley 2466/2025", "article": "art. 5", "title": "Subordinacion algoritmica - reclasificacion laboral", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "Ley 2466/2025:art. 2": { "norm_id": "Ley 2466/2025", "article": "art. 2", "title": "Indicios de subordinacion en plataformas y servicios digitales", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "Ley 100/1993:art. 22": { "norm_id": "Ley 100/1993", "article": "art. 22", "title": "Obligacion de afiliacion al Sistema de Seguridad Social Integral", "url": "https://www.suin-juriscol.gov.co/", "verified": false },
+    "CSJ:SL1706-2024": { "norm_id": "CSJ Sala Laboral", "article": "SL1706-2024", "title": "Debido proceso disciplinario y nulidad del despido", "url": "[VERIFICAR radicado]", "verified": false }
+  }
+}
