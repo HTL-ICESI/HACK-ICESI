@@ -356,11 +356,18 @@ export interface StartCallResult {
   to: string;
 }
 
+/** Un turno de la conversación (agente conduce / trabajador responde). */
+export interface CallTurn {
+  role: "agente" | "trabajador";
+  message: string;
+}
+
 /** Resultado REAL de la llamada (ElevenLabs): transcript + descargo + veredicto. */
 export interface CallResult {
   conversation_id: string;
   status: string; // "done" | "in-progress" | ...
   transcript: string;
+  turns?: CallTurn[];
   descargo: string;
   clasificacion?: string;
   can_proceed?: boolean;

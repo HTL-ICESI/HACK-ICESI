@@ -5,7 +5,7 @@ export function ClosingSection() {
   return (
     <section
       id="demo"
-      className="scroll-mt-24 border-t border-n300/60 bg-lienzo px-6 py-24 md:py-28"
+      className="scroll-mt-24 border-t border-n300/40 px-6 py-24 md:py-28"
     >
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
@@ -15,13 +15,13 @@ export function ClosingSection() {
         </Reveal>
         <Reveal delay={100}>
           <p className="mt-3.5 text-[17px] text-muted-foreground">
-            Edición HG, sobre Cerebro Laboral.
+            WorkLab, una solución de HG Hurtado Gandini.
           </p>
         </Reveal>
         <Reveal delay={150}>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <CtaButton href="/login" variant="primary">
-              Iniciar sesión
+              Ver el demo
             </CtaButton>
             <CtaButton href="/equipo" variant="secondary">
               Hablar con el equipo

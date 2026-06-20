@@ -1,0 +1,718 @@
+[
+  {
+    "id": "SL1861-2024",
+    "norma_id": "CSJ-SL",
+    "norma": "Corte Suprema de Justicia, Sala de Casación Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1861-2024",
+    "epigrafe": "Debido proceso y derecho de defensa en terminaciones de contrato con justa causa",
+    "texto_literal": "M.P. Omar Ángel Mejía Amador. La Sala precisa que el despido con justa causa no constituye una sanción disciplinaria, por lo que no le resulta exigible el trámite disciplinario previo propio de las sanciones. No obstante, el empleador debe garantizar al trabajador la oportunidad real de ejercer su derecho de defensa y contradicción, con soportes documentales que acrediten que, previo al despido, el trabajador pudo dar su versión de los hechos.",
+    "texto_verificado": false,
+    "verificada": true,
+    "fuente": "CSJ — Relatoría Sala de Casación Laboral (PDF SL1861-2024)",
+    "fuente_url": "https://www.cortesuprema.gov.co/corte/wp-content/uploads/relatorias/la/bago2024/SL1861-2024.pdf",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "disciplinario",
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CP-29"
+      }
+    ],
+    "etiquetas": [
+      "debido-proceso",
+      "justa-causa",
+      "derecho-defensa",
+      "disciplinario"
+    ]
+  },
+  {
+    "id": "SL1706-2024",
+    "norma_id": "CSJ-SL",
+    "norma": "Corte Suprema de Justicia, Sala de Casación Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1706-2024",
+    "epigrafe": "(Citada en el enunciado del reto sobre debido proceso disciplinario y nulidad del despido)",
+    "texto_literal": "[PENDIENTE VERIFICACIÓN] — El radicado SL1706-2024 fue citado en el enunciado del reto pero no se localizó en la relatoría de la CSJ Sala Laboral (consulta 2026-06-18). NO citar como válida hasta confirmar contra fuente primaria. Alternativa verificada y aplicable: SL1861-2024.",
+    "texto_verificado": false,
+    "verificada": false,
+    "fuente": "No localizada en relatoría CSJ",
+    "fuente_url": "https://cortesuprema.gov.co/sala-laboral-relatoria/",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "disciplinario"
+    ],
+    "relaciones": [],
+    "etiquetas": [
+      "PENDIENTE-VERIFICACION",
+      "debido-proceso",
+      "disciplinario"
+    ]
+  },
+  {
+    "id": "SL828-2024",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL828-2024",
+    "epigrafe": "Contrato realidad: prestacion de servicios encubre vinculo laboral oficial (sentencia de INSTANCIA, no de casación)",
+    "texto_literal": "Sentencia de instancia que aplica la primacia de la realidad sobre las formas: contratos de prestacion de servicios (Ley 80 de 1993) suscritos por el extinto ISS para vincular a un conductor mecanico (1998-2013) encubrieron un verdadero contrato de trabajo. La presuncion del art. 20 del Decreto 2127 de 1945 surge con la sola prestacion personal del servicio y la simple suscripcion de tales contratos no la desvirtua; la carga de demostrar autonomia e independencia recae en el contratante. Donde existe escalafon o tabla salarial, para la nivelacion basta acreditar el desempeno del cargo sin probar condiciones de eficiencia. Confirma el contrato realidad, ordena nivelacion y condena cesantias, intereses, primas y vacaciones; ademas impone la indemnizacion moratoria del art. 1 del Decreto 797 de 1949 (no automatica, exige examen de buena/mala fe, aqui ausente por ocultar el caracter salarial), limitada hasta el 31 de marzo de 2015 por la extincion del ISS e indexada.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "contrato-realidad",
+      "primacia-de-la-realidad",
+      "contrato-prestacion-de-servicios",
+      "Ley-80-de-1993",
+      "art.20-Decreto-2127-1945",
+      "trabajador-oficial",
+      "ISS",
+      "nivelacion-salarial",
+      "escalafon-tabla-salarial",
+      "indemnizacion-moratoria",
+      "Decreto-797-1949",
+      "prescripcion-trienal",
+      "cesantias",
+      "sentencia-de-instancia",
+      "ancla-modulo",
+      "MP:Donald Jose Dix Ponnefz",
+      "2024-04-17",
+      "jerarquia-instancia"
+    ]
+  },
+  {
+    "id": "SL1105-2023",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1105-2023",
+    "epigrafe": "Primacía de la realidad a FAVOR del contratante: presunción de subordinación (art. 24 CST) desvirtuada por la autonomía del médico — la Corte NO CASA",
+    "texto_literal": "La presunción de subordinación del art. 24 CST aplica también a las profesiones liberales como la medicina, de modo que, probada la prestación personal del servicio, la carga de desvirtuarla recae en el contratante. No obstante, la Corte NO CASA: confirma que esa presunción quedó desvirtuada porque el médico disponía libremente de su tiempo, ofertaba, aceptaba y programaba sus propios turnos (única forma de ser a la vez médico de planta en otra institución), lo que evidenció autonomía e independencia técnica y organizativa. La subordinación del profesional liberal se valora por su integración a un servicio organizado, no por la mera existencia de instrucciones u horarios; aquí la primacía de la realidad operó a favor del contratante al no acreditarse vínculo laboral.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "contrato-realidad",
+      "primacia-de-la-realidad",
+      "presuncion-subordinacion-art24-CST",
+      "profesiones-liberales",
+      "personal-medico",
+      "prestacion-de-servicios",
+      "autonomia-tecnica",
+      "NO-CASA",
+      "primacia-a-favor-del-contratante",
+      "ancla-de-linea",
+      "SL1105-2023",
+      "MP:Dolly Amparo Caguasango Villota",
+      "2023-05-16",
+      "niega-vinculo-laboral",
+      "contracaso"
+    ]
+  },
+  {
+    "id": "SL1354-2020",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1354-2020",
+    "epigrafe": "Contrato realidad de medico vinculado por prestacion de servicios; subordinacion por horarios y turnos",
+    "texto_literal": "La Corte NO CASA la sentencia que declaro la existencia de un contrato de trabajo entre una medica general y Servimedicos Ltda., pese a haberse suscrito contratos de prestacion de servicios, al primar la realidad: cumplimiento de horario y turnos programados por la empresa, deber de pedir permiso para ausentarse y de obtener anuencia de la gerencia para modificar turnos, y atencion de ordenes de la coordinadora medica, todo demostrativo de subordinacion. La supuesta autonomia profesional del medico (guias, protocolos, habilitacion de la clinica) no desvirtua la subordinacion. La decision se sustenta tambien en deficiencias tecnicas del recurso: falta de proposicion juridica (no se indico norma sustancial del orden nacional), mezcla indebida de via directa e indirecta, ataque que pide casar tambien el fallo de primera instancia y no controvierte todos los soportes probatorios (testimonios inatacados). La indemnizacion moratoria del art. 65 CST no se estudia porque no fue objeto de apelacion ante el Tribunal.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "contrato-realidad",
+      "primacia-de-la-realidad",
+      "subordinacion",
+      "personal-medico",
+      "prestacion-de-servicios",
+      "ancla-linea",
+      "art.23-CST",
+      "presuncion-art.24-CST",
+      "tecnica-de-casacion",
+      "proposicion-juridica",
+      "SL1354-2020",
+      "MP:Dolly Amparo Caguasango Villota",
+      "2020-04-20"
+    ]
+  },
+  {
+    "id": "SL4479-2020",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL4479-2020",
+    "epigrafe": "Tercerizacion: contratista independiente vs. simple intermediario y solidaridad",
+    "texto_literal": "La Sala distingue el contratista independiente (art. 34 CST), que ejecuta la obra con estructura, medios y riesgos propios y subordina a sus trabajadores, del simple intermediario (art. 35 CST) o \"hombre de paja\", que solo suministra mano de obra a la empresa principal. Cuando la empresa interpuesta carece de autonomia empresarial y el poder subordinante lo detenta el beneficiario, este es el verdadero empleador. En el caso, Codensa S.A. fue declarada verdadero empleador de los conductores y la Union Temporal Galaxtet y sus integrantes meros intermediarios que, al ocultar su calidad, responden de forma solidaria. Por ello se CASA la sentencia del Tribunal.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "tercerizacion laboral",
+      "contratista independiente art.34 CST",
+      "simple intermediario art.35 CST",
+      "solidaridad",
+      "verdadero empleador",
+      "hombre de paja / falso contratista",
+      "subordinacion",
+      "relacion triangular",
+      "fuero circunstancial",
+      "ancla-modulo-contrato-realidad",
+      "tres elementos del contrato realidad",
+      "contrato-realidad",
+      "MP:Clara Cecilia Dueñas Quevedo",
+      "2020-11-04"
+    ]
+  },
+  {
+    "id": "SL1259-2023",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1259-2023",
+    "epigrafe": "Pacto de exclusion salarial no puede desagregar el salario basico (art.128 CST)",
+    "texto_literal": "Un pago que por esencia es salario (bonificacion de asistencia: retributiva del servicio, habitual, mensual y de naturaleza variable pero regular) no deja de serlo por acuerdo de las partes: la Corte rechaza la distincion entre \"salario\" y \"factor salarial\" que hizo el Tribunal. Los pactos de exclusion salarial del art.128 CST solo pueden recaer sobre emolumentos que no retribuyen directamente el servicio y no pueden instrumentalizarse para desagregar y reducir el salario basico, excluyendolo de la base de liquidacion de recargos por trabajo suplementario, nocturno, dominical, festivo y vacaciones disfrutadas, pues ello desconoce derechos minimos e irrenunciables; si una suma es salario lo debe ser para todos sus efectos. Casa parcialmente y deja en firme la reliquidacion. (En el otro eje, sobre estabilidad reforzada art.26 Ley 361/1997, unifica el concepto de discapacidad a la luz de la Convencion -Ley 1346/2009- y Ley 1618/2013 exigiendo deficiencia de mediano o largo plazo mas barreras conocidas por el empleador, y niega la proteccion frente a contingencias momentaneas de salud; cargos infundados.)",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "obligaciones",
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-128"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-127"
+      }
+    ],
+    "etiquetas": [
+      "art.128 CST",
+      "art.127 CST",
+      "pacto de exclusion salarial",
+      "salario variable",
+      "bonificacion de asistencia",
+      "base de liquidacion",
+      "trabajo suplementario",
+      "vacaciones",
+      "derechos minimos e irrenunciables",
+      "primacia de la realidad",
+      "indemnizacion moratoria art.65 CST (buena fe)",
+      "linea SL5146-2020",
+      "linea SL5159-2018",
+      "linea SL692-2021",
+      "estabilidad reforzada Ley 361/1997 (eje secundario)",
+      "unificacion discapacidad Convencion / Ley 1618/2013",
+      "Radicacion 92829",
+      "Acta 16",
+      "desalarizacion",
+      "MP:Marjorie Zuniga Romero",
+      "2023-05-10"
+    ]
+  },
+  {
+    "id": "SL1659-2025",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1659-2025",
+    "epigrafe": "Base de liquidacion de indemnizacion art.64 con salario variable",
+    "texto_literal": "Para liquidar la indemnizacion por despido sin justa causa (art.64 CST) con salario variable, el salario base es el promedio de lo efectivamente devengado en la ultima anualidad de servicios prestados, no los ultimos 12 meses calendario. No se suma y divide por 12: se aplica una regla de proporcionalidad entre lo devengado y el tiempo efectivamente laborado. Se excluyen del promedio los periodos de suspension del contrato (sin prestacion ni retribucion), trasladando ese tiempo para tomar la ultima anualidad efectivamente prestada; en cambio, la incapacidad por enfermedad no suspende el contrato, por lo que lo percibido durante ella si se incluye en la base (arts.127 y 128 CST).",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "obligaciones"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-249"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-306"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-192"
+      }
+    ],
+    "etiquetas": [
+      "salario-variable",
+      "indemnizacion-despido",
+      "articulo-64-CST",
+      "articulo-253-CST",
+      "salario-base-liquidacion",
+      "suspension-contrato",
+      "incapacidad-enfermedad",
+      "comisiones",
+      "ultima-anualidad-efectiva",
+      "ancla-salario-variable",
+      "SL4743-2018",
+      "SL2282-2022",
+      "covid-19",
+      "MP:Luis Benedicto Herrera Diaz",
+      "2025-03-26"
+    ]
+  },
+  {
+    "id": "SL2525-2025",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL2525-2025",
+    "epigrafe": "Contrato realidad de medico contratista por disponibilidad y subordinacion encubierta",
+    "texto_literal": "Acreditada la prestacion personal del servicio (medico neurocirujano vinculado por prestacion de servicios), se activa la presuncion del art. 24 CST y corresponde al contratante derruir la subordinacion demostrando autonomia e independencia, carga que Comfandi no satisfizo: la disponibilidad continua y permanente, el cumplimiento de turnos sujetos a aprobacion del coordinador y la integracion a la organizacion configuran subordinacion en profesionales liberales, sin que la firma voluntaria del contrato, la autonomia tecnica (lex artis/guias) ni las exigencias del sistema de salud la desvirtuen. La indemnizacion moratoria del art. 65 CST no es automatica y exige examen de buena/mala fe; aqui se confirma por no acreditar el empleador razones serias y atendibles. La Corte solo casa parcialmente para recalcular la sancion del art. 99 Ley 50/1990 por no consignacion de cesantias, excluyendo por prescripcion los montos causados antes del 28 de julio de 2018 (la sancion se causa por cada dia de retardo, no integramente el 15 de febrero), fijandola en $1.179.240.264,23.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "primacia-de-la-realidad",
+      "art.24-CST-presuncion",
+      "subordinacion-disponibilidad",
+      "personal-medico",
+      "neurocirujano",
+      "contrato-prestacion-servicios",
+      "profesional-liberal",
+      "indemnizacion-moratoria-art.65",
+      "buena-fe",
+      "sancion-no-consignacion-cesantias-art.99-Ley50-1990",
+      "prescripcion-trienal",
+      "linea-SL1354-2020",
+      "linea-SL1439-2021",
+      "ancla-SL828-2024",
+      "SL2449-2024-moratoria",
+      "SL672-2023",
+      "SL1068-2023",
+      "casacion-parcial",
+      "contrato-realidad",
+      "MP:Marjorie Zuniga Romero",
+      "2025-12-03"
+    ]
+  },
+  {
+    "id": "SL093-2023",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Descongestion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL093-2023",
+    "epigrafe": "Pacto de desalarizacion no absoluto: bonificaciones por metas son salario",
+    "texto_literal": "La existencia de un acuerdo de exclusion salarial (art. 128 CST) no convierte automaticamente en no salarial un pago; en cada caso debe examinarse facticamente su habitualidad, esencia y que retribuye. Las bonificaciones del Plan de Gestion Comercial de Bancolombia (B. Mer. Lib. No Sal. Fza. Vta. y Bon. Plan Gest. Cial.), al pagarse habitualmente (1 a 4 veces al ano, en su mayoria trimestral) y estar condicionadas al cumplimiento de metas individuales y grupales del asesor, retribuyen el servicio y constituyen factor salarial pese al pacto de desalarizacion, por lo que procede reliquidar primas legales y extralegales, cesantias e intereses. La Corte niega la indemnizacion moratoria del art. 65 CST por buena fe del empleador, y mantiene como justa la terminacion del contrato y la legalidad de los descuentos autorizados.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "obligaciones",
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-128"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-127"
+      }
+    ],
+    "etiquetas": [
+      "art-128-CST",
+      "art-127-CST",
+      "exclusion-salarial",
+      "bonificaciones-plan-gestion-comercial",
+      "Bancolombia",
+      "habitualidad",
+      "primacia-de-la-realidad",
+      "factor-salarial",
+      "linea-SL1738-2021",
+      "reliquidacion-prestaciones",
+      "indemnizacion-moratoria-buena-fe",
+      "art-65-CST",
+      "convenio-95-OIT",
+      "Sala-Descongestion-4",
+      "desalarizacion",
+      "MP:Omar de Jesus Restrepo Ochoa",
+      "2023-01-31"
+    ]
+  },
+  {
+    "id": "SL657-2023",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL657-2023",
+    "epigrafe": "Auxilio de sostenimiento, pacto de exclusion salarial valido (art. 128 CST)",
+    "texto_literal": "La Corte NO CASA y confirma que el \"auxilio de sostenimiento\" pagado de forma habitual y permanente a un tecnico que laboraba en proyectos mineros no tiene naturaleza salarial. El criterio de cierre no es la habitualidad ni la proporcion frente al basico, sino si el pago retribuye directamente el servicio: si el empleador desvirtua la presuncion salarial demostrando que el rubro tiene destinacion especifica (cubrir alojamiento, transporte y vestuario por el desplazamiento a la sede minera) y no enriquece el patrimonio, el pacto de exclusion salarial del art. 128 CST es valido, legal y eficaz. Solo es ineficaz la desalarizacion que recae sobre emolumentos que compensan directamente el trabajo.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "obligaciones",
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-128"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-127"
+      }
+    ],
+    "etiquetas": [
+      "desalarizacion",
+      "art.128-CST",
+      "auxilio-de-sostenimiento",
+      "pacto-de-exclusion-salarial",
+      "primacia-de-la-realidad",
+      "presuncion-salarial",
+      "destinacion-especifica",
+      "linea-de-respaldo",
+      "SL5159-2018",
+      "SL692-2021",
+      "SL1798-2018",
+      "Convenio-95-OIT",
+      "no-casa",
+      "Dimantec",
+      "MP:Carlos Arturo Guarin Jurado",
+      "2023-03-13"
+    ]
+  },
+  {
+    "id": "SL2735-2022",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL2735-2022",
+    "epigrafe": "Pacto de desalarizacion ineficaz: tarjeta de beneficios que retribuye el servicio es salario",
+    "texto_literal": "La Corte NO CASA y mantiene que los pagos hechos a la trabajadora bajo \"Tarjeta People Pass Bienestar\" (35% de la remuneracion) son salario, pese al pacto de exclusion del art. 128 CST. Aunque el pacto no fue generico, la documental probo que el dinero pagaba colegio, telefonia y TV cable, enriqueciendo el patrimonio de la trabajadora y retribuyendo el servicio, pues dejaba de sufragar esas obligaciones. La carga de demostrar la destinacion no remunerativa pesa sobre el empleador y este no la acredito; los pactos de desalarizacion solo recaen sobre emolumentos que no compensan directamente el trabajo. Confirma las sanciones de los arts. 65 CST y 99 de la Ley 50/1990 por ausencia de buena fe, recordando que la aceptacion del trabajador no exime de mala fe.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "obligaciones",
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-128"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-127"
+      }
+    ],
+    "etiquetas": [
+      "art.128 CST",
+      "art.127 CST",
+      "pacto de exclusion salarial",
+      "tarjeta de beneficios",
+      "People Pass",
+      "carga de la prueba empleador",
+      "primacia de la realidad",
+      "art.65 CST",
+      "art.99 Ley 50 de 1990",
+      "indemnizacion moratoria",
+      "linea SL5159-2018",
+      "buena fe",
+      "Convenio 95 OIT",
+      "desalarizacion",
+      "MP:Carlos Arturo Guarin Jurado",
+      "2022-07-05"
+    ]
+  },
+  {
+    "id": "SL2409-2024",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Casacion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL2409-2024",
+    "epigrafe": "Horas extras habituales en base de cesantias y primas, no de vacaciones",
+    "texto_literal": "El reconocimiento de horas extras no convierte el salario fijo en variable, pero cuando el salario fijo presenta variacion el art. 253 CST ordena liquidar las cesantias con el promedio del ultimo ano de servicios. Las horas extras habituales constituyen salario (art. 127 CST) e integran la base de liquidacion de cesantias, sus intereses y primas de servicio (art. 306 CST), pero se excluyen de las vacaciones por mandato expreso del art. 192-1 CST. La indemnizacion moratoria del art. 65 CST no es automatica: exige examen de buena o mala fe del empleador, y en el caso se exonero porque existian razones atendibles (el trabajador estuvo incapacitado los ultimos dos anos sin causar trabajo suplementario).",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "obligaciones"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-249"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-306"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CST-192"
+      }
+    ],
+    "etiquetas": [
+      "salario-variable",
+      "ancla",
+      "horas-extras",
+      "art-253-CST",
+      "art-306-CST",
+      "art-192-CST",
+      "art-127-CST",
+      "cesantias",
+      "primas-de-servicio",
+      "vacaciones",
+      "moratoria-art-65",
+      "buena-fe",
+      "incapacidad-laboral",
+      "salario-fijo-vs-variable",
+      "SAR-ENERGY",
+      "MP:Giovanni Francisco Rodriguez Jimenez y Ana Maria Munoz Segura (sentencia compartida)",
+      "2024-07-23"
+    ]
+  },
+  {
+    "id": "SL2338-2023",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Descongestion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL2338-2023",
+    "epigrafe": "Moratoria art.65 CST: mecanica segun fecha de demanda",
+    "texto_literal": "La indemnizacion moratoria del art. 65 CST no es automatica: exige examinar la buena o mala fe del empleador, y es este quien tiene la carga de probar que obro sin intencion fraudulenta. Si la demanda se presenta dentro de los 2 anos siguientes a la terminacion, se paga un dia de salario por cada dia de retardo hasta 24 meses y, a partir del mes 25, intereses moratorios. Pero si la demanda se radica una vez transcurridos esos 24 meses, el trabajador pierde el derecho al dia de salario por dia de retardo y solo le asisten los intereses de mora, causados desde la terminacion del contrato sobre el capital adeudado. La Corte casa parcialmente porque el Tribunal aplico la regla de los 24 meses pese a que la demanda fue radicada despues de ese plazo.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-65"
+      }
+    ],
+    "etiquetas": [
+      "indemnizacion-moratoria",
+      "articulo-65-CST",
+      "buena-fe",
+      "mala-fe",
+      "carga-de-la-prueba-empleador",
+      "tope-24-meses",
+      "intereses-de-mora",
+      "prescripcion-bienal",
+      "casacion-parcial",
+      "ancla-moratoria",
+      "contrato-realidad-subyacente",
+      "salario-superior-al-minimo",
+      "C781-2003",
+      "moratoria",
+      "MP:Omar de Jesus Restrepo Ochoa",
+      "2023-09-19"
+    ]
+  },
+  {
+    "id": "SL1103-2021",
+    "norma_id": "CSJ-SL",
+    "norma": "CSJ Sala de Descongestion Laboral",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SL1103-2021",
+    "epigrafe": "Estabilidad reforzada en salud exige discapacidad moderada, severa o profunda al despido",
+    "texto_literal": "La Corte reitera que no toda afeccion de salud o incapacidad medica temporal genera la garantia de estabilidad laboral reforzada del articulo 26 de la Ley 361 de 1997. Para activar la proteccion (y la exigencia de autorizacion del Ministerio de Trabajo) el trabajador debe acreditar una condicion de discapacidad en grado moderado, severo o profundo, presente al momento del despido; en su defecto, la limitacion puede inferirse solo de un estado de salud notorio, evidente y perceptible. Al no demostrarse esa condicion al momento del retiro, NO CASA la sentencia absolutoria del Tribunal. El segundo cargo, ademas, naufraga por defectos tecnicos al atacar el fallo de primera instancia y no la sentencia del Tribunal. [Nota de tensión: la línea de la Corte Constitucional (SU-049/2017, SU-061/2023, SU-087/2022) NO exige grado de PCL y exhorta a la Sala Laboral a abandonar este criterio.]",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "clasificacion-vinculo"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "estabilidad-laboral-reforzada",
+      "Ley 361 de 1997 art. 26",
+      "discapacidad moderada/severa/profunda",
+      "fuero de salud",
+      "autorizacion Ministerio de Trabajo",
+      "NO CASA",
+      "linea-de-respaldo",
+      "SL10538-2016",
+      "art. 99 Ley 50 de 1990 (pretension accesoria)",
+      "casacion laboral",
+      "estabilidad-reforzada",
+      "MP:Martin Emilio Beltran Quintero",
+      "2021-03-16",
+      "tension-con-linea-constitucional"
+    ]
+  }
+]

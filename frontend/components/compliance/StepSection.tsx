@@ -37,7 +37,7 @@ export function StepSection({
     <span
       className={cn(
         "flex size-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold",
-        done ? "bg-toga text-lienzo" : "bg-acento-soft text-acento",
+        done ? "bg-carbon text-lienzo" : "bg-acento-soft text-acento",
       )}
     >
       {done ? <Check className="size-4" aria-hidden="true" /> : n}

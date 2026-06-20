@@ -306,12 +306,14 @@ class TestReclasificacionG2Mejorada:
         g2 = next(g for g in gaps if g.gap_id == "g2")
         assert "2" in g2.issue
 
-    def test_issue_menciona_ley_2466(self):
+    def test_issue_explica_presuncion_laboral(self):
+        """g2 se ancla en la presuncion de relacion laboral (CST art. 23/24)."""
         from app.domain.compliance.gap_rules import detect_gaps
         rec = self._record()
         gaps = detect_gaps(rec, reference_date=REF)
         g2 = next(g for g in gaps if g.gap_id == "g2")
-        assert "2466" in g2.issue
+        assert "art. 23" in g2.issue or "art. 24" in g2.issue
+        assert "subordinacion" in g2.issue.lower()
 
     def test_vinculo_laboral_no_genera_g2(self):
         """Contratos laborales (término fijo, indefinido) nunca generan g2."""

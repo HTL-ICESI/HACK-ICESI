@@ -34,7 +34,7 @@ export function Benefits() {
   const supporting = PRINCIPLES.slice(1);
 
   return (
-    <section id="beneficios" className="scroll-mt-24 bg-toga px-6 py-24 text-lienzo md:py-28">
+    <section id="beneficios" className="scroll-mt-24 bg-carbon px-6 py-24 text-lienzo md:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <h2 className="max-w-xl font-display text-[clamp(2rem,4.5vw,3rem)] font-medium leading-[1.12] text-lienzo">
@@ -51,7 +51,7 @@ export function Benefits() {
         <div className="mt-11 space-y-9">
           <Reveal>
             <div className="flex flex-col gap-5 border-b border-white/10 pb-9 sm:flex-row sm:items-start sm:gap-6">
-              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-[#A1D4D2]">
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-acento/15 text-[#E07A72] ring-1 ring-inset ring-acento/25">
                 <FeaturedIcon className="size-6" aria-hidden="true" />
               </span>
               <div className="max-w-2xl">
@@ -69,16 +69,18 @@ export function Benefits() {
             {supporting.map((p, i) => {
               const Icon = p.icon;
               return (
-                <Reveal key={p.title} delay={i * 70}>
-                  <span className="flex size-10 items-center justify-center rounded-xl bg-white/10 text-[#A1D4D2]">
-                    <Icon className="size-5" aria-hidden="true" />
-                  </span>
-                  <h3 className="mt-4 text-[17px] font-semibold text-lienzo">
-                    {p.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-lienzo/70">
-                    {p.body}
-                  </p>
+                <Reveal key={p.title} delay={i * 70} className="h-full">
+                  <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-200 hover:border-acento/30 hover:bg-white/[0.06]">
+                    <span className="flex size-11 items-center justify-center rounded-xl bg-acento/15 text-[#E07A72] ring-1 ring-inset ring-acento/25">
+                      <Icon className="size-5" aria-hidden="true" />
+                    </span>
+                    <h3 className="mt-4 text-[18px] font-semibold text-lienzo">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-lienzo/70">
+                      {p.body}
+                    </p>
+                  </div>
                 </Reveal>
               );
             })}

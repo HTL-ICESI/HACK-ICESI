@@ -143,7 +143,12 @@ class DocumentsRequest(BaseModel):
     session_id: str
     diligence_state: DiligenceStateIn
     transcript: str = ""
-    lawyer_name: str = ""   # abogado que firma el acta
+    lawyer_name: str = ""        # abogado que firma
+    worker_name: str = ""        # datos reales del trabajador y del caso
+    worker_id: str = ""
+    company_name: str = ""
+    charges: str = ""
+    diligence_date: str = ""
 
 
 @router.post("/documents")
@@ -153,7 +158,12 @@ async def generate_documents(
     svc: DisciplinaryService = Depends(get_disciplinary_service),
 ):
     state = _to_domain(req.diligence_state)
-    result = await svc.generate_documents(ctx, state, req.transcript, lawyer_name=req.lawyer_name)
+    result = await svc.generate_documents(
+        ctx, state, req.transcript, lawyer_name=req.lawyer_name,
+        worker_name=req.worker_name, worker_id=req.worker_id,
+        company_name=req.company_name, charges=req.charges,
+        diligence_date=req.diligence_date,
+    )
     return {"session_id": req.session_id, **result}
 
 
@@ -265,9 +275,9 @@ def call_webhook(
 
 class EvidenceWhatsAppRequest(BaseModel):
     to_number: str                     # celular del trabajador
-    worker_name: str
-    company_name: str
-    charges_summary: str
+    worker_name: str = ""
+    company_name: str = ""
+    charges_summary: str = ""
     # Si se manda process_id, los adjuntos se arman SOLOS desde la evidencia del
     # expediente (URLs públicas firmadas). evidence_names/urls quedan como override manual.
     process_id: str | None = None
@@ -305,6 +315,52 @@ def evidence_whatsapp(
         call_date=req.call_date, call_time=req.call_time,
         response_deadline=req.response_deadline, lawyer_name=req.lawyer_name,
     )
+
+
+# --- J1: enviar un documento generado (citación/acta) por WhatsApp como PDF -----
+
+class DocumentWhatsAppRequest(BaseModel):
+    to_number: str
+    title: str
+    body_markdown: str
+    worker_name: str = ""
+    company_name: str = ""
+
+
+@router.post("/document/whatsapp")
+def document_whatsapp(
+    req: DocumentWhatsAppRequest,
+    ctx: TenantContext = Depends(get_tenant),
+    pipeline: PipelineService = Depends(get_pipeline_service),
+):
+    """Renderiza el documento a PDF, lo hostea (URL firmada) y lo manda por WhatsApp."""
+    from app.core.simple_pdf import markdown_to_pdf
+    from app.core.media_token import sign
+    from app.services.pipeline_service import _public_base
+    from app.adapters.telephony.whatsapp_client import TwilioWhatsAppClient, normalize_co
+
+    pdf = markdown_to_pdf(req.title, req.body_markdown)
+    slug = (req.title or "documento").lower().replace(" ", "_")
+    blob_id = pipeline.stash_blob(ctx, f"{slug}.pdf", pdf, "application/pdf")
+
+    base = _public_base(get_settings().backend_host)
+    body = (f"{req.company_name or 'Proceso disciplinario'} — {req.title}\n\n"
+            f"Adjuntamos el documento del proceso disciplinario"
+            f"{f' de {req.worker_name}' if req.worker_name else ''}.")
+    wa = TwilioWhatsAppClient()
+
+    if not base:
+        return {"sent": False, "preview": body,
+                "note": "Falta BACKEND_HOST (túnel público) para adjuntar el PDF."}
+    url = f"{base}/media/evidence/{blob_id}?t={sign(ctx.require(), blob_id)}"
+    if not wa.configured():
+        return {"sent": False, "preview": body, "media": [url],
+                "note": "Twilio no configurado — el PDF se generó y hostea, no se envió."}
+    try:
+        res = wa.send(normalize_co(req.to_number), body=body, media_urls=[url])
+        return {"sent": True, "preview": body, "media": [url], **res}
+    except Exception as exc:  # noqa: BLE001
+        return {"sent": False, "preview": body, "media": [url], "error": str(exc)[:160]}
 
 
 # --- J1: contraste descargo ↔ cargos (asesor, no decide) -----------------------

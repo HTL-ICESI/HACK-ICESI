@@ -1,0 +1,192 @@
+[
+  {
+    "id": "L2452-3",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "3",
+    "radicado": null,
+    "epigrafe": "Dirección del proceso",
+    "texto_literal": "El juez asumirá la dirección del proceso adoptando las medidas necesarias para garantizar el respeto de los derechos fundamentales y el equilibrio entre las partes, la agilidad y celeridad en su trámite, atendiendo los enfoques diferenciales. El juez en sus decisiones aplicará fórmulas de justicia retributiva, compensatoria, restaurativa y terapéutica, con el fin de concertar medidas de reparación y reconstrucción positiva de las relaciones. Asimismo, garantizará el principio de razonabilidad y las medidas de igualdad por compensación establecidas en este código.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["debido-proceso", "direccion-del-proceso", "principios", "equilibrio-entre-partes"]
+  },
+  {
+    "id": "L2452-5",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "5",
+    "radicado": null,
+    "epigrafe": "Inmediación",
+    "texto_literal": "El juez practicará personalmente todas las pruebas, para lo cual podrá valerse de los medios digitales o físicos disponibles o de cualquier otra forma de comunicación que garantice la inmediación, concentración y contradicción. Cuando no fuere posible practicar las pruebas o llevar a cabo determinados actos procesales directamente por el juez que conoce del proceso, se podrá comisionar a un juez con competencia en asuntos laborales para que se surta con su presencia e intervención.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["inmediacion", "contradiccion", "practica-de-pruebas", "principios"]
+  },
+  {
+    "id": "L2452-123",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "123",
+    "radicado": null,
+    "epigrafe": "Oralidad y publicidad",
+    "texto_literal": "Las actuaciones judiciales y la práctica de pruebas en las instancias, se efectuarán oralmente y en audiencia pública, so pena de nulidad, salvo las excepciones que señale expresamente la ley, y los siguientes autos: Los de sustanciación por fuera de audiencia. Los interlocutorios no susceptibles de apelación. Los interlocutorios que se dicten antes de la audiencia inicial y con posterioridad a las sentencias de instancias. El que resuelve las excepciones de mérito en el proceso ejecutivo. Parágrafo 1°. En los procesos ejecutivos se aplicarán estas reglas en la práctica de pruebas. Parágrafo 2°. El juez limitará la duración de las intervenciones de las partes y de sus apoderados, respetando el derecho a la defensa. Parágrafo 3°. En el auto que fije fecha y hora para una audiencia pública virtual, se deberá suministrar el enlace de acceso al medio digital, donde las terceras personas interesadas puedan conectarse, salvo que el juez, justificadamente, considere necesario restringir su difusión o limitar la asistencia.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["oralidad", "publicidad", "audiencia", "derecho-de-defensa", "principios"]
+  },
+  {
+    "id": "L2452-127",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "127",
+    "radicado": null,
+    "epigrafe": "Necesidad de la prueba",
+    "texto_literal": "Toda decisión judicial debe fundarse en las pruebas regular y oportunamente allegadas al proceso, atendiendo en todo caso, los enfoques diferenciales. Las pruebas obtenidas con violación del debido proceso son nulas de pleno derecho.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["necesidad-de-prueba", "debido-proceso", "prueba-ilicita", "regimen-probatorio"]
+  },
+  {
+    "id": "L2452-128",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "128",
+    "radicado": null,
+    "epigrafe": "Carga dinámica de la prueba",
+    "texto_literal": "Incumbe a las partes probar el supuesto de hecho de las normas que consagran el efecto jurídico que ellas persiguen. No obstante, según las particularidades del caso, el juez deberá, de oficio o a petición de parte, distribuir la carga al decretar las pruebas, durante su práctica o en cualquier momento del proceso antes de fallar, exigiendo probar determinado hecho a la parte que se encuentre en una situación más favorable para aportar las evidencias o esclarecer los hechos controvertidos. Se considerará que la parte está en mejor posición para probar en virtud de su cercanía con el material probatorio, por tener en su poder el objeto de prueba, por circunstancias técnicas especiales, por haber intervenido directamente en los hechos que dieron lugar al litigio, o por estado de indefensión o de incapacidad en la cual se encuentre la contraparte o en virtud de los enfoques diferenciales, entre otras circunstancias similares. Cuando el juez adopte esta decisión, que será susceptible de recurso de reposición, otorgará a la parte correspondiente el término necesario para aportar o solicitar la respectiva prueba, la cual se someterá a las reglas de contradicción previstas en este código. Los hechos notorios y las afirmaciones o negaciones indefinidas no requieren prueba.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["carga-de-la-prueba", "carga-dinamica", "contradiccion", "regimen-probatorio"]
+  },
+  {
+    "id": "L2452-131",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "131",
+    "radicado": null,
+    "epigrafe": "Oportunidades probatorias",
+    "texto_literal": "Para que sean apreciadas por el juez las pruebas deberán solicitarse, practicarse e incorporarse al proceso dentro de los términos y oportunidades señalados para ello en este código. En la providencia que resuelva sobre las solicitudes de pruebas formuladas por las partes, el juez deberá pronunciarse expresamente sobre la admisión de los documentos y demás pruebas que estas hayan aportado y tendrá en cuenta para ello la disponibilidad y facilidad probatoria que corresponda a cada parte. El juez se abstendrá de ordenar la práctica de las pruebas que, directamente o por medio de derecho de petición, hubiera podido conseguir la parte que las solicite, salvo cuando la petición no hubiese sido atendida, lo que deberá acreditarse sumariamente. El juez practicará personalmente las pruebas en la sede del juzgado de forma presencial o virtual, garantizando la publicidad, integridad, legalidad, derecho de defensa e inmediación de las pruebas y el debate probatorio, que se encuentran estrechamente ligadas con la construcción de la verdad. Las pruebas practicadas por comisionado o de común acuerdo por las partes y los informes o documentos solicitados a otras entidades públicas o privadas, que lleguen antes de dictar sentencia, serán tenidas en cuenta para la decisión, previo el cumplimiento de los requisitos legales para su práctica y contradicción.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["oportunidades-probatorias", "derecho-de-defensa", "contradiccion", "regimen-probatorio"]
+  },
+  {
+    "id": "L2452-160",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "160",
+    "radicado": null,
+    "epigrafe": "Contradicción del dictamen",
+    "texto_literal": "La parte contra la cual se aduzca un dictamen pericial podrá solicitar la comparecencia del perito a la audiencia, aportar otro o realizar ambas actuaciones. Estas deberán realizarse dentro del término de traslado del escrito con el cual haya sido aportado o, en su defecto, dentro del término que el juez conceda, que en ningún caso podrá ser inferior a los diez (10) días. En virtud de la anterior solicitud, o si el juez lo considera necesario, citará al perito a la respectiva audiencia, en la cual el juez y las partes podrán interrogarlo bajo juramento acerca de su idoneidad e imparcialidad y sobre el contenido del dictamen. La contraparte de quien haya aportado el dictamen podrá formular preguntas asertivas e insinuantes. Las partes tendrán derecho, si lo consideran necesario, a interrogar nuevamente al perito, en el orden establecido para el testimonio. Si el perito citado no asiste a la audiencia, el dictamen no tendrá valor. Si se excusa al perito, antes de su intervención en la audiencia, por fuerza mayor o caso fortuito, el juez recaudará las demás pruebas y suspenderá la audiencia para continuarla en nueva fecha y hora que señalará antes de cerrarla, en la cual se interrogará al experto y se surtirán las etapas del proceso pendientes. El perito solo podrá excusarse una vez. Las justificaciones que por las mismas causas sean presentadas dentro de los tres (3) días siguientes a la audiencia, solo autorizan el decreto de la prueba en segunda instancia, si ya se hubiere proferido sentencia. En ningún caso habrá lugar a trámite especial de objeción del dictamen por error grave.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["contradiccion", "dictamen-pericial", "derecho-de-defensa", "regimen-probatorio"]
+  },
+  {
+    "id": "L2452-208",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "208",
+    "radicado": null,
+    "epigrafe": "Notificación de las providencias",
+    "texto_literal": "Las providencias judiciales se darán a conocer a las partes, apoderados y demás interesados por medio de notificaciones, en la siguiente forma: Personalmente: a) Al demandado o a su representante o apoderado judicial, la del auto admisorio de la demanda, y en general, la que tenga por objeto hacerle saber la primera providencia que se dicte en el proceso. b) La primera que se haga a los empleados públicos en su carácter de tales. c) La primera que se haga a terceros. En estrados: Oralmente, las de las providencias que se dicten en las audiencias públicas. Se entenderán surtidos los efectos de estas notificaciones inmediatamente después de su pronunciamiento, aunque no hayan concurrido las partes. Por estados: a) La de los autos que se dicten fuera de audiencia. b) La de las sentencias que resuelvan los recursos de casación, de revisión y de anulación, y demás que dentro de sus competencias profieran la Sala de Casación Laboral de la Corte Suprema de Justicia y las salas laborales de los tribunales superiores de distrito judicial, en primera o segunda instancia. c) Las sentencias que resuelvan los recursos de apelación y la consulta. d) Las sentencias que se profieran por escrito, con ocasión de lo dispuesto en el artículo 259 de este código. Las notificaciones por estado se fijarán virtualmente, con inserción de la providencia, y no será necesario imprimirlos, ni firmarlos por el secretario, ni dejar constancia con firma al pie de la providencia respectiva. Los autos de cúmplase no requieren ser notificados. Por conducta concluyente. Parágrafo. Cuando una parte acredite haber enviado un escrito del cual deba correrse traslado a los demás sujetos procesales, mediante la remisión de la copia por un canal digital, se prescindirá del traslado por secretaría, el cual se entenderá realizado a los dos (2) días hábiles siguientes al del envío del mensaje y el término respectivo empezará a contarse cuando el iniciador recepcione acuse de recibo o se pueda por otro medio constatar la entrega del mensaje al destinatario, salvo cuando se trate de traslados que correspondan a providencias que se deben notificar personalmente.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["notificaciones", "debido-proceso", "providencias", "canal-digital"]
+  },
+  {
+    "id": "L2452-258",
+    "norma_id": "L2452/2025",
+    "norma": "Ley 2452 de 2025 (Código Procesal del Trabajo y de la Seguridad Social)",
+    "tipo": "ley",
+    "articulo": "258",
+    "radicado": null,
+    "epigrafe": "Audiencia inicial: de conciliación, decisión de excepciones previas, saneamiento, fijación del litigio y decreto de pruebas",
+    "texto_literal": "Contestada la demanda principal y la de reconvención si la hubiere, o cuando no hayan sido contestadas en el término legal, el juez señalará fecha y hora para que las partes comparezcan personal o virtualmente, con o sin apoderado, a audiencia pública, que será dirigida por el juez, previo el examen completo del expediente. Para efectos de esta audiencia, se observarán las siguientes reglas: Conciliación: Excusas para no comparecer: Si antes de la hora señalada para la audiencia, alguna de las partes presenta prueba siquiera sumaria de una justa causa para no comparecer, el juez señalará nueva fecha para celebrarla, la cual será fijada dentro de los cinco (5) días siguientes a la fecha inicial, sin que pueda haber otro aplazamiento, salvo solicitud de ambas partes por tener ánimo conciliatorio. Consecuencias de no comparecer sin justificación: si las partes o sus apoderados, con facultad para conciliar, no concurren a la audiencia de conciliación, el juez la declarará clausurada y se producirán las siguientes consecuencias procesales: Si se trata del demandante se presumirán ciertos los hechos susceptibles de confesión contenidos en la contestación de la demanda y en las excepciones de mérito. Si se trata del demandado, se presumirán ciertos los hechos de la demanda susceptibles de confesión. Cuando los hechos no admitan prueba de confesión, la no comparecencia de las partes se apreciará como indicio grave en su contra. Procedimiento en caso de comparecencia de las partes: Instalada la audiencia, si concurren las partes, con o sin apoderados, el juez los invitará para que en su presencia y bajo su vigilancia concilien sus diferencias, si fueren susceptibles de solución por este medio, y si no lo hicieren, deberá proponer las fórmulas que estime justas sin que ello signifique prejuzgamiento y sin que las manifestaciones de las partes impliquen confesión. b. Seguidamente procederá a resolver las excepciones previas, dictar las medidas de saneamiento, fijación del litigio, decretar pruebas solicitadas por las partes y las que el juez considere de oficio. c. En la fijación del litigio deberá analizar los hechos que constituyen confesión derivados de los actos procesales de parte y requerirá a las partes para que manifiesten sus objeciones al respecto. Posteriormente, mediante auto establecerá los hechos que se encuentran probados, aquellos respecto de los cuales advierte existió confesión y fijará el litigio con los hechos que resulten controversiales y no han sido aceptados por las partes. d. Finalmente decretará las pruebas que fueren conducentes y necesarias y depurará el expediente electrónico de las pruebas que no han sido decretadas. El juez señalará día y hora para audiencia de trámite y juzgamiento, que habrá de celebrarse dentro de los tres (3) meses siguientes. Parágrafo. Si el juez lo considera pertinente, podrá practicar las pruebas a continuación de su decreto, siempre que se garantice el derecho de defensa de las partes, incluidos los interrogatorios a las partes. Para ello, previamente deberá advertirlo en el auto que señala fecha y hora para la audiencia inicial.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=259084",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CP-29" },
+      { "tipo": "complementa", "destino": "L2452-123" }
+    ],
+    "etiquetas": ["audiencia-inicial", "conciliacion", "fijacion-del-litigio", "decreto-de-pruebas", "derecho-de-defensa"]
+  }
+]

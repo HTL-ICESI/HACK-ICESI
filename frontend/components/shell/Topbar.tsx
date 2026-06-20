@@ -2,6 +2,7 @@
 
 import { Menu } from "lucide-react";
 
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { CompanySelector } from "./CompanySelector";
 import { PersonaSwitch } from "./PersonaSwitch";
 
@@ -19,7 +20,7 @@ export function Topbar({ onMenu }: TopbarProps) {
       <button
         aria-label="Abrir menú"
         onClick={onMenu}
-        className="rounded-md p-2 text-foreground hover:bg-n100 md:hidden"
+        className="flex size-11 items-center justify-center rounded-md text-foreground hover:bg-n100 md:hidden"
       >
         <Menu className="size-5" />
       </button>
@@ -29,6 +30,7 @@ export function Topbar({ onMenu }: TopbarProps) {
           <PersonaSwitch />
         </div>
         <CompanySelector />
+        <ThemeToggle />
       </div>
     </header>
   );

@@ -79,10 +79,10 @@ def test_antialucinacion_norma_parcialmente_presente():
     El resto se descarta silenciosamente.
     """
     rec = _record(hours=48, vinculo="prestacion_servicios")
-    # Solo devolvemos nodo para Ley 2101 (g1), no para Ley 2466 (g2)
+    # Solo devolvemos nodo para Ley 2101 (g1), no para la reclasificacion (g2)
     corpus_parcial = {
-        "Ley 2101/2021:art. 3": {
-            "norm_id": "Ley 2101/2021", "article": "art. 3",
+        "Ley 2101/2021:art. 2": {
+            "norm_id": "Ley 2101/2021", "article": "art. 2",
             "title": "Reduccion jornada a 42h", "url": "https://...", "verified": False,
         }
     }
@@ -110,21 +110,24 @@ def test_citation_se_resuelve_correctamente_desde_corpus():
 
     cit = gaps["g1"]["citation"]
     assert cit["norm_id"] == "Ley 2101/2021"
-    assert cit["article"] == "art. 3"
-    assert "42h" in cit["title"] or "jornada" in cit["title"].lower()
+    assert cit["article"] == "art. 2"
+    assert "jornada" in cit["title"].lower() or "42" in cit["title"]
     assert isinstance(cit["verified"], bool)
+    # Ahora resuelve contra el corpus VERIFICADO de David.
+    assert cit["verified"] is True
 
 
-def test_gap_reclasificacion_citation_ley_2466():
-    """g2 reclasificacion cita exactamente Ley 2466/2025 art. 5."""
+def test_gap_reclasificacion_citation_cst24():
+    """g2 reclasificacion se ancla a la presuncion laboral (CST art. 24, verificado)."""
     rec = _record(vinculo="prestacion_servicios")
     result = _svc().analyze(CTX, "svc-test-001", rec, "contrato")
 
     gaps = {g["gap_id"]: g for g in result["gaps"]}
     assert "g2" in gaps
     cit = gaps["g2"]["citation"]
-    assert cit["norm_id"] == "Ley 2466/2025"
-    assert cit["article"] == "art. 5"
+    assert cit["norm_id"] == "CST"
+    assert cit["article"] == "art. 24"
+    assert cit["verified"] is True
     assert gaps["g2"]["remedy_type"] == "contrato_corregido"
 
 

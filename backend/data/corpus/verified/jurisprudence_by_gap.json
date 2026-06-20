@@ -1,0 +1,20 @@
+{
+  "_note": "Índice gap_id -> sentencias que respaldan el gap. Lo muestra M3 ('respaldado por N sentencias') y lo mantiene el Vigilante Normativo al aprobar una sentencia. Curado por David; 'verified' refleja confirmación contra relatoría oficial.",
+  "by_gap": {
+    "g1": [
+      { "radicado": "C-115-2026", "title": "Reducción de la jornada laboral a 42 horas (Ley 2101 de 2021)", "url": "https://www.vlex.com/source/C-115-2026", "fecha": "2026-03-12", "verified": false }
+    ],
+    "g2": [
+      { "radicado": "SL2410-2026", "title": "Contrato realidad y primacía de la realidad sobre prestación de servicios", "url": "https://www.vlex.com/source/SL2410-2026", "fecha": "2026-02-20", "verified": false }
+    ],
+    "g3": [
+      { "radicado": "SL1998-2025", "title": "Vencimiento del contrato a término fijo y reconducción", "url": "https://www.vlex.com/source/SL1998-2025", "fecha": "2025-11-05", "verified": false }
+    ],
+    "g4": [
+      { "radicado": "MinTrabajo-Circular-0061-2026", "title": "Obligación de afiliación al sistema de seguridad social", "url": "https://www.vlex.com/source/MinTrabajo-0061-2026", "fecha": "2026-04-01", "verified": false }
+    ],
+    "g5": [
+      { "radicado": "UGPP-Concepto-2026-118", "title": "Mora en aportes a seguridad social e intereses moratorios", "url": "https://www.vlex.com/source/UGPP-2026-118", "fecha": "2026-01-30", "verified": false }
+    ]
+  }
+}

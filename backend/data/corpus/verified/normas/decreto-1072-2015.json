@@ -1,0 +1,42 @@
+[
+  {
+    "id": "D1072-L2P2T4",
+    "norma_id": "D1072/2015",
+    "norma": "Decreto 1072 de 2015 — Decreto Único Reglamentario del Sector Trabajo",
+    "tipo": "decreto",
+    "articulo": "Libro 2, Parte 2, Título 4",
+    "radicado": null,
+    "epigrafe": "Jornadas especiales de trabajo",
+    "texto_literal": "[NODO DE REFERENCIA, texto literal pendiente] Reglamenta las jornadas especiales (turnos sucesivos, jornadas flexibles, jornada laboral especial sin solución de continuidad). Complementa el régimen de jornada del CST y la Ley 2101/2021. Pendiente transcribir el articulado específico desde Función Pública/SUIN.",
+    "texto_verificado": false,
+    "fuente": "Función Pública - Gestor Normativo (Decreto 1072/2015)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["jornada"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CST-161" },
+      { "tipo": "reglamenta", "destino": "L2101-2" }
+    ],
+    "etiquetas": ["decreto-reglamentario", "jornadas-especiales", "PENDIENTE-VERIFICACION"]
+  },
+  {
+    "id": "D1072-L2P2T6",
+    "norma_id": "D1072/2015",
+    "norma": "Decreto 1072 de 2015 — Decreto Único Reglamentario del Sector Trabajo",
+    "tipo": "decreto",
+    "articulo": "Libro 2, Parte 2, Título 6",
+    "radicado": null,
+    "epigrafe": "Aspectos del proceso disciplinario y comité de convivencia laboral",
+    "texto_literal": "[NODO DE REFERENCIA, texto literal pendiente] Recoge disposiciones reglamentarias sobre el procedimiento disciplinario interno y el comité de convivencia laboral. Complementa el debido proceso del art. 29 CP y el art. 115 CST. Pendiente transcribir el articulado específico desde Función Pública/SUIN.",
+    "texto_verificado": false,
+    "fuente": "Función Pública - Gestor Normativo (Decreto 1072/2015)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=72173",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [
+      { "tipo": "reglamenta", "destino": "CST-115" },
+      { "tipo": "reglamenta", "destino": "CP-29" }
+    ],
+    "etiquetas": ["decreto-reglamentario", "disciplinario", "comite-convivencia", "PENDIENTE-VERIFICACION"]
+  }
+]

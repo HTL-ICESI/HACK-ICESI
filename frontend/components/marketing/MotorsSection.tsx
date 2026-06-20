@@ -1,10 +1,11 @@
 import { Check, FileSearch, ShieldCheck } from "lucide-react";
 
+import { GlowBorder } from "./GlowBorder";
 import { Reveal } from "./Reveal";
 
 const MOTOR_1 = [
   "Extracción con cita y confianza",
-  "Liquidación verificada — “✓ calculado”",
+  "Liquidación verificada: “✓ calculado”",
   "Riesgo de reclasificación (Ley 2466)",
 ];
 
@@ -24,7 +25,7 @@ function CheckItem({ children, dark }: { children: string; dark?: boolean }) {
       }
     >
       <Check
-        className={dark ? "size-4 shrink-0 text-[#A1D4D2]" : "size-4 shrink-0 text-ok"}
+        className={dark ? "size-4 shrink-0 text-[#E07A72]" : "size-4 shrink-0 text-ok"}
         aria-hidden="true"
       />
       {children}
@@ -52,11 +53,11 @@ export function MotorsSection() {
         <div className="mt-9 grid gap-6 md:grid-cols-2">
           {/* Motor 1 — Compliance Vivo (clara) */}
           <Reveal className="h-full">
-            <div className="h-full rounded-2xl border border-n300/60 bg-surface p-7 shadow-bezel">
-              <span className="flex size-11 items-center justify-center rounded-xl bg-acento-soft text-acento">
+            <div className="h-full rounded-2xl border border-n300/60 bg-surface p-7 shadow-lift transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-acento/30 hover:shadow-bezel-hover">
+              <span className="flex size-12 items-center justify-center rounded-xl bg-acento-soft text-acento">
                 <FileSearch className="size-5" aria-hidden="true" />
               </span>
-              <h3 className="mt-4 font-display text-[22px] font-medium text-toga">
+              <h3 className="mt-4 font-display text-[24px] font-medium text-toga">
                 Compliance Vivo
               </h3>
               <p className="mt-2 text-[15px] leading-relaxed text-body">
@@ -74,26 +75,29 @@ export function MotorsSection() {
 
           {/* Motor 2 — Disciplinario Blindado (la joya) */}
           <Reveal delay={90} className="h-full">
-            <div className="relative h-full overflow-hidden rounded-2xl bg-toga p-7 text-lienzo shadow-bezel">
+            <GlowBorder
+              className="h-full shadow-lift transition-transform duration-200 ease-out hover:-translate-y-1"
+              innerClassName="relative h-full overflow-hidden bg-carbon p-7 text-lienzo"
+            >
               <div
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_85%_0%,rgba(128,24,23,0.28),transparent_65%)]"
               />
               <div className="relative">
-                <span className="flex size-11 items-center justify-center rounded-xl bg-white/10 text-[#A1D4D2]">
+                <span className="flex size-12 items-center justify-center rounded-xl bg-white/10 text-[#E07A72]">
                   <ShieldCheck className="size-5" aria-hidden="true" />
                 </span>
                 <div className="mt-4 flex items-center gap-2.5">
-                  <h3 className="font-display text-[22px] font-medium text-lienzo">
+                  <h3 className="font-display text-[24px] font-medium text-lienzo">
                     Disciplinario Blindado
                   </h3>
-                  <span className="rounded bg-[#A1D4D2] px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-toga">
+                  <span className="rounded bg-[#E07A72] px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.1em] text-toga">
                     la joya
                   </span>
                 </div>
                 <p className="mt-2 text-[15px] leading-relaxed text-lienzo/75">
                   Conduce la diligencia de descargos y avisa en vivo si se va a
-                  cometer una nulidad — antes de que ocurra. Bloquea la decisión
+                  cometer una nulidad, antes de que ocurra. Bloquea la decisión
                   si falta debido proceso.
                 </p>
                 <ul className="mt-5 space-y-2.5">
@@ -104,7 +108,7 @@ export function MotorsSection() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </GlowBorder>
           </Reveal>
         </div>
       </div>

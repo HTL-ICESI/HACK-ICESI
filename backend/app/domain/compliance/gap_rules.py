@@ -52,15 +52,23 @@ def detect_gaps(
     ref = reference_date or date.today()
     gaps: list[Gap] = []
 
-    # --- Regla 1: Jornada maxima (Ley 2101/2021 art. 3) ---
+    # --- Regla 1: Jornada maxima (Ley 2101/2021 art. 2, que modifica el CST art. 161) ---
     hours = record.weekly_hours.value
     if isinstance(hours, (int, float)) and hours > JORNADA_MAX_2026:
+        exceso = hours - JORNADA_MAX_2026
         gaps.append(Gap(
             gap_id="g1",
-            issue=f"Jornada de {hours}h excede el maximo legal de {JORNADA_MAX_2026}h (Ley 2101/2021, vigor pleno 2026)",
+            issue=(
+                f"El contrato pacta una jornada de {hours} horas semanales, {exceso}h por "
+                f"encima del maximo legal de {JORNADA_MAX_2026}h. La Ley 2101 de 2021 (art. 2, "
+                f"que modifico el art. 161 del CST) redujo la jornada ordinaria a 42 horas, "
+                f"con implementacion gradual que culmina en 2026. Una jornada superior expone "
+                f"a la empresa al pago de horas extra retroactivas y a reclamaciones; debe "
+                f"corregirse mediante otrosi que ajuste la jornada al limite vigente."
+            ),
             severity="alta",
             norm_id="Ley 2101/2021",
-            article="art. 3",
+            article="art. 2",
             remedy_type="otrosi",
             source_field="weekly_hours",
         ))
@@ -83,17 +91,22 @@ def detect_gaps(
             "ALTO — reclasificacion probable" if indicios >= 2
             else "MEDIO — verificar subordinacion"
         )
+        indicios_txt = ", ".join(_INDICIOS_FIELDS[:indicios]) if indicios else "ninguno detectado"
         gaps.append(Gap(
             gap_id="g2",
             issue=(
-                f"Contrato de prestacion de servicios con {indicios} indicio(s) de subordinacion "
-                f"({', '.join(_INDICIOS_FIELDS[:indicios] if indicios else ['ninguno detectado'])}). "
-                f"Riesgo {riesgo_label} (Ley 2466/2025 art. 5). "
-                f"Accion: revisar clausulas y emitir contrato corregido si se confirma subordinacion."
+                f"El contrato es de prestacion de servicios, pero se detectaron {indicios} "
+                f"indicio(s) de subordinacion ({indicios_txt}). El art. 23 del CST exige "
+                f"subordinacion para que exista contrato de trabajo, y el art. 24 PRESUME la "
+                f"relacion laboral cuando hay prestacion personal del servicio; la Ley 2466/2025 "
+                f"refuerza este criterio para el trabajo mediado por plataformas o algoritmos. "
+                f"Riesgo {riesgo_label}: si un juez confirma la subordinacion, el contrato se "
+                f"reclasifica como laboral con pago retroactivo de prestaciones y aportes. Accion: "
+                f"revisar las clausulas y emitir un contrato corregido o formalizar el vinculo."
             ),
             severity=severity_g2,
-            norm_id="Ley 2466/2025",
-            article="art. 5",
+            norm_id="CST",
+            article="art. 24",
             remedy_type="contrato_corregido",
             source_field="vinculo_type",
         ))
@@ -106,9 +119,17 @@ def detect_gaps(
             end_val = record.end_date.value
             end_dt = date.fromisoformat(end_val) if (end_val and isinstance(end_val, str)) else ref
             if (end_dt - start_dt).days > 365:
+                anios = (end_dt - start_dt).days // 365
                 gaps.append(Gap(
                     gap_id="g3",
-                    issue="Periodo laboral superior a 1 anio sin evidencia de vacaciones tomadas (CST art. 186)",
+                    issue=(
+                        f"El trabajador acumula mas de {anios} anio(s) de servicio sin registro de "
+                        f"vacaciones disfrutadas. El art. 186 del CST otorga 15 dias habiles de "
+                        f"vacaciones remuneradas por cada anio trabajado. Las vacaciones no tomadas "
+                        f"se acumulan y deben compensarse o programarse; dejarlas vencer genera un "
+                        f"pasivo creciente y riesgo de reclamacion. Accion: programar el disfrute o "
+                        f"instruir a nomina la compensacion correspondiente."
+                    ),
                     severity="media",
                     norm_id="CST",
                     article="art. 186",
@@ -135,8 +156,12 @@ def detect_gaps(
                     gaps.append(Gap(
                         gap_id="g4",
                         issue=(
-                            f"Contrato a termino fijo VENCIDO hace {abs(days_left)} dias "
-                            f"sin registro de renovacion ni acta de terminacion (CST art. 46)"
+                            f"El contrato a termino fijo esta VENCIDO hace {abs(days_left)} dias sin "
+                            f"registro de renovacion ni acta de terminacion. El art. 46 del CST exige "
+                            f"preaviso escrito de no prorroga con 30 dias de antelacion; sin el, el "
+                            f"contrato se entiende RENOVADO automaticamente por un periodo igual. "
+                            f"Seguir sin documentar genera incertidumbre sobre la vigencia y posible "
+                            f"indemnizacion. Accion: formalizar la renovacion o el acta de terminacion."
                         ),
                         severity="alta",
                         norm_id="CST",
@@ -149,8 +174,12 @@ def detect_gaps(
                     gaps.append(Gap(
                         gap_id="g4",
                         issue=(
-                            f"Contrato a termino fijo vence en {days_left} dias — "
-                            f"requiere renovacion o preaviso de no prorroga (CST art. 46)"
+                            f"El contrato a termino fijo vence en {days_left} dias. El art. 46 del CST "
+                            f"obliga a dar preaviso escrito de no prorroga con minimo 30 dias de "
+                            f"antelacion; de lo contrario el contrato se renueva automaticamente por "
+                            f"un periodo igual al pactado. Dejar pasar el plazo sin decision puede "
+                            f"comprometer a la empresa a un nuevo periodo no deseado. Accion: decidir "
+                            f"renovacion o emitir el preaviso de no prorroga a tiempo."
                         ),
                         severity=severity,
                         norm_id="CST",
@@ -169,7 +198,14 @@ def detect_gaps(
     if mora is not None and mora.value is True and not tc_confirmed:
         gaps.append(Gap(
             gap_id="g5",
-            issue="Mora comprobada en aportes a seguridad social — regularizar de inmediato (Ley 100/1993 art. 22)",
+            issue=(
+                "Se detecto mora en el pago de aportes a la seguridad social. El art. 22 de la "
+                "Ley 100 de 1993 obliga al empleador a afiliar y cotizar oportunamente a salud, "
+                "pension y riesgos; la mora genera intereses, sanciones de la UGPP y, si ocurre un "
+                "siniestro, traslada el costo de la prestacion al empleador. Es una contingencia de "
+                "alto impacto economico y reputacional. Accion: regularizar los aportes en mora de "
+                "inmediato e instruir a nomina el pago con intereses."
+            ),
             severity="alta",
             norm_id="Ley 100/1993",
             article="art. 22",

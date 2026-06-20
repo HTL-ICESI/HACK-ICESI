@@ -1,0 +1,211 @@
+[
+  {
+    "id": "CST-22",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "22",
+    "radicado": null,
+    "epigrafe": "Definición",
+    "texto_literal": "1. Contrato de trabajo es aquel por el cual una persona natural se obliga a prestar un servicio personal a otra persona, natural o jurídica, bajo la continuada dependencia o subordinación de la segunda y mediante remuneración. 2. Quien presta el servicio se denomina trabajador, quien lo recibe y remunera, empleador, y la remuneración, cualquiera que sea su forma, salario.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-23"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      }
+    ],
+    "etiquetas": [
+      "contrato-trabajo",
+      "subordinacion",
+      "reclasificacion"
+    ]
+  },
+  {
+    "id": "CST-23",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "23",
+    "radicado": null,
+    "epigrafe": "Elementos esenciales",
+    "texto_literal": "1. Para que haya contrato de trabajo se requiere que concurran estos tres elementos esenciales: a) La actividad personal del trabajador, es decir, realizada por sí mismo; b) La continuada subordinación o dependencia del trabajador o trabajadora respecto del empleador, que faculta a este para exigirle el cumplimiento de órdenes, en cualquier momento, en cuanto al modo, tiempo o cantidad de trabajo, e imponer reglamentos, la cual debe mantenerse por todo el tiempo de duración del contrato. Todo ello sin que afecte el honor, la dignidad y los derechos mínimos del trabajador o trabajadora, en concordancia con los tratados o convenios internacionales sobre derechos humanos relativos a la materia ratificados por Colombia que sean de carácter vinculante. Aquellas facultades no pueden constituirse en un factor de discriminación basado en el sexo, la identidad de género, la orientación sexual, la raza, el color, etnia, el origen nacional, la discapacidad, la condición familiar, edad, condiciones económicas, condiciones sobrevinientes de salud, preferencias políticas o religiosas, como tampoco por el ejercicio de la sindicalización. El Ministerio del Trabajo adelantará las actuaciones administrativas correspondientes y sancionará de acuerdo con las normas vigentes; c) Un salario como retribución del servicio. 2. Una vez reunidos los tres elementos de que trata este artículo, se entiende que existe contrato de trabajo y no deja de serlo por razón del nombre que se le dé ni de otras condiciones o modalidades que se le agreguen.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.16"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-24"
+      },
+      {
+        "tipo": "desarrolla_principio",
+        "destino": "CP-53"
+      },
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "elementos-esenciales",
+      "subordinacion",
+      "reclasificacion",
+      "primacia-realidad",
+      "no-discriminacion"
+    ]
+  },
+  {
+    "id": "CST-24",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "24",
+    "radicado": null,
+    "epigrafe": "Presunción",
+    "texto_literal": "Se presume que toda relación de trabajo personal está regida por un contrato de trabajo. (El inciso 2 del artículo 2 de la Ley 50 de 1990 fue declarado INEXEQUIBLE por la Corte Constitucional, Sentencia C-665 de 1998.)",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-23"
+      }
+    ],
+    "etiquetas": [
+      "presuncion",
+      "reclasificacion",
+      "carga-prueba"
+    ]
+  },
+  {
+    "id": "CST-46",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "46",
+    "radicado": null,
+    "epigrafe": "Contratos a término fijo y de obra o labor determinada",
+    "texto_literal": "1. CONTRATOS DE TRABAJO A TÉRMINO FIJO. Podrán celebrarse contratos de trabajo a término fijo por un término no mayor a cuatro (4) años. El contrato de trabajo a término fijo deberá celebrarse por escrito. Cuando el contrato de trabajo a término fijo no cumpla las condiciones y requisitos previamente mencionados, se entenderá celebrado a término indefinido desde el inicio de la relación laboral. El contrato a término fijo no podrá renovarse indefinidamente, sin embargo, podrán considerarse los siguientes tipos de prórrogas: Prórroga pactada. Cuando el contrato de trabajo se celebre por un término inferior a un (1) año, las partes, mediante acuerdo escrito, podrán prorrogar el número de veces que estimen conveniente; sin embargo, después de la cuarta prórroga, el contrato no podrá renovarse por un período inferior a un (1) año. En ningún caso podrá superarse el término máximo de cuatro (4) años previsto en este artículo, para los casos de contratos vigentes este límite máximo se contabilizará a partir de la entrada en vigencia de esta ley. Prórroga automática. Si con treinta (30) días de antelación al vencimiento del plazo pactado o su prórroga, ninguna de las partes manifestare su intención de terminar el contrato, este se entenderá renovado por un término igual al inicialmente pactado o al de su prórroga, según sea el caso, sin que pueda superarse el límite máximo de cuatro (4) años previsto en este artículo. Esta misma regla aplicará a los contratos celebrados por un término inferior a un (1) año, pero en este caso la cuarta prórroga automática será por un período de un (1) año. 2. CONTRATO DE TRABAJO POR DURACIÓN DE OBRA O LABOR DETERMINADA. Podrán celebrarse contratos de trabajo por el tiempo que dure la realización de una obra o labor determinada. El contrato de trabajo por la duración de obra o labor determinada deberá celebrarse por escrito y en él deberá indicarse, de forma precisa y detallada, la obra o labor contratada que se requiere atender. Cuando no se cumplan las condiciones señaladas en el presente artículo, o cuando una vez finalice la obra o labor contratada, el trabajador continúe prestando sus servicios, el contrato se entenderá celebrado a término indefinido desde el inicio de la relación laboral, a menos que se trate de una nueva y diferente obra o labor, caso en el que se podrá continuar el contrato adicionando por escrito el acuerdo en el que se especifique la nueva obra o labor o se liquidará el contrato anterior y se iniciará un nuevo contrato por la nueva necesidad, especificando en cualesquiera de los dos casos de forma clara y precisa la nueva obra o labor contratada. Parágrafo 1. En los contratos a término fijo y de obra o labor determinada, el trabajador y la trabajadora tendrán derecho al pago de vacaciones y prestaciones sociales en proporción al tiempo laborado cualquiera que este sea.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.6"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "contrato-termino-fijo",
+      "obra-labor",
+      "prorroga",
+      "reclasificacion"
+    ]
+  },
+  {
+    "id": "CST-47",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "47",
+    "radicado": null,
+    "epigrafe": "El contrato laboral a término indefinido",
+    "texto_literal": "Los trabajadores y las trabajadoras serán vinculados mediante contrato de trabajo a término indefinido. Sin perjuicio de lo anterior, podrán celebrarse contratos de trabajo, ya sea a término fijo, por el tiempo que dure la realización de una obra o labor determinada o para ejecutar un trabajo ocasional, accidental o transitorio. El contrato a término indefinido tendrá vigencia mientras subsistan las causas que le dieron origen y la materia del trabajo. El trabajador o trabajadora podrá darlo por terminado mediante preaviso de treinta (30) días calendario para que el empleador provea su reemplazo. En ningún caso se podrá pactar sanción para el empleado que omita el preaviso aquí descrito. Parágrafo. El preaviso indicado no aplica en los eventos de terminación unilateral por parte del trabajador cuando sea por una causa imputable al empleador, de las relacionadas como justas causas para dar por terminado el contrato por parte del trabajador en este código; caso en el cual el trabajador o trabajadora podrá dar por terminado el contrato haciendo expresas las razones o motivos de la determinación y acudir a los Mecanismos Alternativos de Resolución de Conflictos o vía judicial para obtener el pago de la indemnización a la que tendría derecho, en caso de comprobarse el incumplimiento grave de las obligaciones a cargo del empleador.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.5"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "clasificacion-vinculo",
+      "riesgo-reclasificacion"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "contrato-termino-indefinido",
+      "preaviso",
+      "regla-general"
+    ]
+  },
+  {
+    "id": "CST-59",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "59",
+    "radicado": null,
+    "epigrafe": "Prohibiciones a los empleadores",
+    "texto_literal": "Se prohíbe a los empleadores: 1. Deducir, retener o compensar suma alguna del monto de los salarios y prestaciones en dinero que corresponda a los trabajadores, sin autorización previa escrita de éstos para cada caso, o sin mandamiento judicial, con excepción de los siguientes: a) Respeto de salarios, pueden hacerse deducciones, retenciones o compensaciones en los casos autorizados por los artículos 113, 150, 151, 152 y 400. b) Las cooperativas pueden ordenar retenciones hasta de un cincuenta por ciento (50%) de salarios y prestaciones, para cubrir sus créditos, en la forma y en los casos en que la ley las autorice. c) (Literal declarado INEXEQUIBLE por la Corte Constitucional, Sentencia C-247 de 2001.) 2. Obligar en cualquier forma a los trabajadores a comprar mercancías o víveres en almacenes o proveedurías que establezca el empleador. 3. Exigir o aceptar dinero del trabajador como gratificación para que se le admita en el trabajo o por otro motivo cualquiera que se refiera a las condiciones de éste. 4. Limitar o presionar en cualquier forma a los trabajadores en el ejercicio de su derecho de asociación. 5. Imponer a los trabajadores obligaciones de carácter religioso o político, o dificultarles o impedirles el ejercicio del derecho del sufragio. 6. Hacer, autorizar, o tolerar propaganda política en los sitios de trabajo. 7. Hacer o permitir todo género de rifas, colectas o suscripciones en los mismos sitios. 8. Emplear en las certificaciones de que trata el ordinal 7o. del artículo 57 signos convencionales que tiendan a perjudicar a los interesados, o adoptar el sistema de \"lista negra\", cualquiera que sea la modalidad que utilicen, para que no se ocupe en otras empresas a los trabajadores que se separen o sean separados del servicio. 9. Ejecutar o autorizar cualquier acto que vulnere o restrinja los derechos de los trabajadores o que ofenda su dignidad. 10. Discriminar a las mujeres y las personas con identidades de género diversas con acciones directas u omisiones, que impidan la garantía de sus derechos en los ambientes laborales, con ocasión de sus nombres identitarios, orientación sexual o cualquier otro aspecto de su vida personal que no esté relacionado o influya en su ejercicio laboral. Se prohíbe así mismo el racismo y la xenofobia, también cualquier forma de discriminación en razón de la ideología política, étnica, credo religioso, en el ámbito del trabajo. Se prohíbe también generar, inducir o promover prácticas discriminatorias hacia las personas trabajadoras que se identifiquen con otros géneros no binarios y diversas sexualidades, o cualquier otro aspecto de su vida personal que no esté relacionado o influya en su ejercicio laboral. 11. Exigir a la persona en embarazo ejecutar tareas que requieran esfuerzos físicos que puedan producir el aborto o impedir el desarrollo normal del feto, conforme a las recomendaciones y/o restricciones médicas. La negativa de la trabajadora a llevar a cabo estas labores no puede ser razón para disminuir su salario, ni desmejorar sus condiciones de trabajo, por lo tanto, es obligación de los empleadores garantizar la permanencia y la reubicación en un puesto de trabajo acorde con su estado. 12. Discriminar a personas trabajadoras víctimas de violencias basadas en género por causas asociadas a estas circunstancias. 13. Despedir o presionar la renuncia de las personas trabajadoras por razones de carácter religioso, político, racial y/o étnico. 14. Limitar o presionar en cualquier forma a las personas trabajadoras para dejar el ejercicio de su libertad religiosa o política, cuando esta no interfiera con las actividades propias del cargo. 15. Despedir o presionar la renuncia de las personas trabajadoras por razones de carácter de enfermedad o afectaciones a la salud mental.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.17"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "riesgo-reclasificacion",
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "prohibiciones-empleador",
+      "no-discriminacion",
+      "disciplinario"
+    ]
+  }
+]

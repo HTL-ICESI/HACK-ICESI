@@ -55,7 +55,7 @@ export function ProductMock() {
 
       {/* Card flotante: 1 nulidad evitada (Motor 2) */}
       <div className="absolute -bottom-6 -left-6 flex items-center gap-3 rounded-2xl border border-n300/60 bg-surface px-4 py-3.5 shadow-bezel">
-        <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-toga text-lienzo">
+        <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-carbon text-lienzo">
           <ShieldCheck className="size-[18px]" aria-hidden="true" />
         </span>
         <div>

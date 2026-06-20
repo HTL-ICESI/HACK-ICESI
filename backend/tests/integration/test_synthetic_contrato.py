@@ -383,8 +383,8 @@ class TestContrato2FalsoIndependiente:
         result = _analyze(RECORD_CONTRATO_2)
         g2 = next((g for g in result["gaps"] if g["gap_id"] == "g2"), None)
         assert g2 is not None, "El caso estrella: debe detectar riesgo de reclasificacion"
-        assert g2["citation"]["norm_id"] == "Ley 2466/2025"
-        assert g2["citation"]["article"] == "art. 5"
+        assert g2["citation"]["norm_id"] == "CST"
+        assert g2["citation"]["article"] == "art. 24"
         assert "2" in g2["issue"]  # "2 indicio(s)"
 
     def test_detecta_jornada_obsoleta(self):

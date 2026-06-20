@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 /**
- * Sistema de diseño "Cerebro Laboral · Edición HG" — Manual HG v1.1.
+ * Sistema de diseño WorkLab — una solución de HG Hurtado Gandini (Manual HG v1.2).
  * - Tokens semánticos de shadcn como tripletas HSL (para que `bg-primary/90` etc. funcionen en v3).
  * - Tokens de marca y semáforo de estado en hex/rgba (DESIGN.md §2), usados directamente.
  * Los nombres históricos `toga` y `acento` se conservan como aliases para no
@@ -58,37 +58,64 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
 
-        // ── Marca HG v1.1 ──
-        carbon: { DEFAULT: "#353535", 700: "#000000" },
-        "hg-gray": "#776867",
-        "hg-red": { DEFAULT: "#801817", soft: "#F2E8E7" },
-        wine: { DEFAULT: "#743537", soft: "#F5E7E6" },
+        // ── Marca HG v1.1 ── (canales RGB en globals.css :root / .dark → theming)
+        // `carbon` y `lienzo` son FIJOS (superficies oscuras de marca + texto claro
+        // sobre ellas). El resto invierte en modo oscuro vía las variables .dark.
+        carbon: {
+          DEFAULT: "rgb(var(--carbon) / <alpha-value>)",
+          700: "rgb(var(--carbon-700) / <alpha-value>)",
+        },
+        "hg-gray": "rgb(var(--hg-gray) / <alpha-value>)",
+        "hg-red": {
+          DEFAULT: "rgb(var(--hg-red) / <alpha-value>)",
+          soft: "rgb(var(--hg-red-soft) / <alpha-value>)",
+        },
+        wine: {
+          DEFAULT: "rgb(var(--wine) / <alpha-value>)",
+          soft: "rgb(var(--wine-soft) / <alpha-value>)",
+        },
 
-        // Aliases compatibles con las clases existentes.
+        // Aliases compatibles con las clases existentes (mismos nombres de token).
         toga: {
-          DEFAULT: "#353535",
-          700: "#000000",
-          300: "#776867",
+          DEFAULT: "rgb(var(--toga) / <alpha-value>)",
+          700: "rgb(var(--toga-700) / <alpha-value>)",
+          300: "rgb(var(--toga-300) / <alpha-value>)",
         },
         acento: {
-          DEFAULT: "#801817",
-          soft: "#F2E8E7",
+          DEFAULT: "rgb(var(--acento) / <alpha-value>)",
+          soft: "rgb(var(--acento-soft) / <alpha-value>)",
         },
         accion: {
-          DEFAULT: "#743537",
-          soft: "#F5E7E6",
+          DEFAULT: "rgb(var(--accion) / <alpha-value>)",
+          soft: "rgb(var(--accion-soft) / <alpha-value>)",
         },
-        lienzo: "#FBFAF9",
-        surface: "#FFFFFF",
-        n100: "#F4F1EF",
-        n300: "#D8D0CC",
-        body: "#554B45",
+        lienzo: "rgb(var(--lienzo) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        n100: "rgb(var(--n100) / <alpha-value>)",
+        n300: "rgb(var(--n300) / <alpha-value>)",
+        body: "rgb(var(--body) / <alpha-value>)",
 
         // ── Semáforo de ESTADO (nunca decorativo). soft = relleno, fg = texto ──
-        ok: { DEFAULT: "#2E7D32", fg: "#2E7D32", soft: "rgba(46,125,50,0.12)" },
-        warn: { DEFAULT: "#A16207", fg: "#A16207", soft: "rgba(161,98,7,0.14)" },
-        risk: { DEFAULT: "#801817", fg: "#801817", soft: "rgba(128,24,23,0.10)" },
-        info: { DEFAULT: "#94A0A9", fg: "#554B45", soft: "rgba(148,160,169,0.14)" },
+        ok: {
+          DEFAULT: "rgb(var(--ok) / <alpha-value>)",
+          fg: "rgb(var(--ok-fg) / <alpha-value>)",
+          soft: "rgb(var(--ok) / 0.14)",
+        },
+        warn: {
+          DEFAULT: "rgb(var(--warn) / <alpha-value>)",
+          fg: "rgb(var(--warn-fg) / <alpha-value>)",
+          soft: "rgb(var(--warn) / 0.16)",
+        },
+        risk: {
+          DEFAULT: "rgb(var(--risk) / <alpha-value>)",
+          fg: "rgb(var(--risk-fg) / <alpha-value>)",
+          soft: "rgb(var(--risk) / 0.12)",
+        },
+        info: {
+          DEFAULT: "rgb(var(--info) / <alpha-value>)",
+          fg: "rgb(var(--info-fg) / <alpha-value>)",
+          soft: "rgb(var(--info) / 0.16)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -125,6 +152,7 @@ const config: Config = {
           "0 0 0 1px rgba(53,53,53,0.07), inset 0 1px 0 rgba(255,255,255,0.85), 0 2px 4px rgba(53,53,53,0.04), 0 14px 36px rgba(53,53,53,0.07)",
         "bezel-hover":
           "0 0 0 1px rgba(128,24,23,0.30), inset 0 1px 0 rgba(255,255,255,0.9), 0 4px 8px rgba(53,53,53,0.06), 0 22px 52px rgba(53,53,53,0.12)",
+        "glow-red": "0 0 0 1px rgba(128,24,23,0.22), 0 10px 30px -6px rgba(128,24,23,0.35)",
       },
       keyframes: {
         "accordion-down": {
@@ -145,12 +173,24 @@ const config: Config = {
           "0%, 100%": { boxShadow: "0 0 0 0 rgba(128,24,23,0)" },
           "50%": { boxShadow: "0 0 0 4px rgba(128,24,23,0.12)" },
         },
+        // Deriva muy lenta del glow del átomo (fondo de la landing).
+        drift: {
+          "0%, 100%": { transform: "translate3d(0,0,0) scale(1)", opacity: "0.9" },
+          "50%": { transform: "translate3d(2%,-2%,0) scale(1.06)", opacity: "1" },
+        },
+        // Respiración sutil del halo (escala + opacidad).
+        breathe: {
+          "0%, 100%": { opacity: "0.55", transform: "scale(1)" },
+          "50%": { opacity: "0.8", transform: "scale(1.04)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "grow-x": "grow-x 0.7s cubic-bezier(0.23,1,0.32,1) both",
         "soft-pulse": "soft-pulse 2.4s ease-in-out infinite",
+        drift: "drift 26s ease-in-out infinite",
+        breathe: "breathe 9s ease-in-out infinite",
       },
     },
   },

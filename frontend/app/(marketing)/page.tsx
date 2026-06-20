@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { AtomBackground } from "@/components/marketing/AtomBackground";
 import { Benefits } from "@/components/marketing/Benefits";
 import { ClosingSection } from "@/components/marketing/ClosingSection";
 import { Faq } from "@/components/marketing/Faq";
@@ -11,7 +12,7 @@ import { ProofSection } from "@/components/marketing/ProofSection";
 import { VideoDemo } from "@/components/marketing/VideoDemo";
 
 export const metadata: Metadata = {
-  title: "Cerebro Laboral — Ve el riesgo antes de que cueste",
+  title: "WorkLab: Ve el riesgo antes de que cueste",
   description:
     "Compliance laboral vivo para firmas de derecho y sus clientes: detecta lo desactualizado, lo cuantifica en pesos y frena la nulidad antes de que ocurra.",
 };
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 export default function LandingPage() {
   return (
     <>
+      <AtomBackground />
       <MarketingNav />
       <main>
         <Hero />

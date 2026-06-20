@@ -19,7 +19,7 @@ export function VideoDemo() {
             </h2>
             <p className="mt-3.5 text-[15px] leading-relaxed text-body">
               Del contrato al número mágico, y de la diligencia a la nulidad
-              frenada — en 90 segundos.
+              frenada, en 90 segundos.
             </p>
           </div>
         </Reveal>
@@ -27,8 +27,8 @@ export function VideoDemo() {
         <Reveal delay={120}>
           <Link
             href="/login"
-            aria-label="Reproducir el recorrido del producto y acceder al demo en vivo"
-            className="group relative mt-9 block aspect-video overflow-hidden rounded-2xl bg-toga shadow-bezel transition-transform duration-200 ease-out active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-acento focus-visible:ring-offset-2 focus-visible:ring-offset-lienzo"
+            aria-label="Reproducir el recorrido del producto y abrir el demo en vivo"
+            className="group relative mt-9 block aspect-video overflow-hidden rounded-2xl bg-carbon shadow-bezel transition-transform duration-200 ease-out active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-acento focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             {/* Textura rayada de marca */}
             <span
@@ -43,8 +43,8 @@ export function VideoDemo() {
 
             {/* Botón de play (foco) */}
             <span className="absolute inset-0 flex items-center justify-center">
-              <span className="flex size-[76px] items-center justify-center rounded-full bg-lienzo text-toga shadow-bezel transition-transform duration-200 ease-out [@media(hover:hover)]:group-hover:scale-105">
-                <Play className="size-7 translate-x-0.5 fill-toga" aria-hidden="true" />
+              <span className="flex size-[76px] items-center justify-center rounded-full bg-lienzo text-carbon shadow-bezel transition-transform duration-200 ease-out [@media(hover:hover)]:group-hover:scale-105">
+                <Play className="size-7 translate-x-0.5 fill-carbon" aria-hidden="true" />
               </span>
             </span>
 
@@ -52,15 +52,15 @@ export function VideoDemo() {
               [ demo del producto · 90s ]
             </span>
             <span className="absolute right-5 top-4 inline-flex items-center gap-1.5 font-mono text-[11px] text-lienzo/60">
-              <span className="size-[7px] rounded-full bg-[#A1D4D2]" aria-hidden="true" />
-              Cerebro Laboral
+              <span className="size-[7px] rounded-full bg-[#E07A72]" aria-hidden="true" />
+              WorkLab
             </span>
           </Link>
         </Reveal>
 
         <Reveal delay={180}>
           <p className="mt-4 font-mono text-[12px] text-toga-300">
-            Video próximamente — por ahora, el play abre el demo interactivo.
+            Video próximamente. Por ahora, el play abre el demo interactivo.
           </p>
         </Reveal>
       </div>

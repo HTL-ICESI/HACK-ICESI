@@ -58,7 +58,7 @@ export function DisciplinaryFlow() {
         </button>
 
         <div className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-2xl border border-n300/60 bg-card px-5 py-3 shadow-hairline">
-          <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-toga text-lienzo">
+          <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-carbon text-lienzo">
             <Check className="size-3.5" aria-hidden />
           </span>
           <span className="text-sm font-medium text-toga">{active.worker}</span>

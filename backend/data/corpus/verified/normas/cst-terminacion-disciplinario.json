@@ -1,0 +1,255 @@
+[
+  {
+    "id": "CST-61",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "61",
+    "radicado": null,
+    "epigrafe": "Terminación del contrato",
+    "texto_literal": "1. El contrato de trabajo termina:\na) Por muerte del trabajador;\nb) Por mutuo consentimiento;\nc) Por expiración del plazo fijo pactado;\nd) Por terminación de la obra o labor contratada;\ne) Por liquidación o clausura definitiva de la empresa o establecimiento;\nf) Por suspensión de actividades por parte del empleador durante más de ciento veinte (120) días;\ng) Por sentencia ejecutoriada;\nh) Por decisión unilateral en los casos de los artículos 7o., del Decreto Ley 2351/65, y 6o. de esta Ley, e\ni) Por no regresar el trabajador a su empleo, al desaparecer las causas de la suspensión del contrato.\n2. En los casos contemplados en los literales e) y f) de este artículo, el empleador deberá solicitar el correspondiente permiso al Ministerio de Trabajo y Seguridad Social e informar por escrito a sus trabajadores de este hecho. El Ministerio de Trabajo y Seguridad Social resolverá lo relacionado con el permiso en un plazo de dos (2) meses. El cumplimiento injustificado de este término hará incurrir al funcionario responsable en causal de mala conducta sancionable con arreglo al régimen disciplinario vigente.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "terminacion-contrato",
+      "causales-terminacion"
+    ]
+  },
+  {
+    "id": "CST-62",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "62",
+    "radicado": null,
+    "epigrafe": "Terminación del contrato por justa causa",
+    "texto_literal": "Son justas causas para dar por terminado unilateralmente el contrato de trabajo:\nA). Por parte del empleador:\n1. El haber sufrido engaño por parte del trabajador, mediante la presentación de certificados falsos para su admisión o tendientes a obtener un provecho indebido.\n2. Todo acto de violencia, injuria, malos tratamientos o grave indisciplina en que incurra el trabajador en sus labores, contra el empleador, los miembros de su familia, el personal directivo o los compañeros de trabajo.\n3. Todo acto grave de violencia, injuria o malos tratamientos en que incurra el trabajador fuera del servicio, en contra del empleador, de los miembros de su familia o de sus representantes y socios, jefes de taller, vigilantes o celadores.\n4. Todo daño material causado intencionalmente a los edificios, obras, maquinarias y materias primas, instrumentos y demás objetos relacionados con el trabajo, y toda grave negligencia que ponga en peligro la seguridad de las personas o de las cosas.\n5. Todo acto inmoral o delictuoso que el trabajador cometa en el taller, establecimiento o lugar de trabajo o en el desempeño de sus labores.\n6. Cualquier violación grave de las obligaciones o prohibiciones especiales que incumben al trabajador de acuerdo con los artículos 58 y 60 del Código Sustantivo del Trabajo, o cualquier falta grave calificada como tal en pactos o convenciones colectivas, fallos arbitrales, contratos individuales o reglamentos.\n7. La detención preventiva del trabajador por más de treinta (30) días, a menos que posteriormente sea absuelto; o el arresto correccional que exceda de ocho (8) días, o aun por tiempo menor, cuando la causa de la sanción sea suficiente por sí misma para justificar la extinción del contrato.\n8. El que el trabajador revele los secretos técnicos o comerciales o dé a conocer asuntos de carácter reservado, con perjuicio de la empresa.\n9. El deficiente rendimiento en el trabajo en relación con la capacidad del trabajador y con el rendimiento promedio en labores análogas, cuando no se corrija en un plazo razonable a pesar del requerimiento del empleador.\n10. La sistemática inejecución, sin razones válidas, por parte del trabajador, de las obligaciones convencionales o legales.\n11. Todo vicio del trabajador que perturbe la disciplina del establecimiento.\n12. La renuencia sistemática del trabajador a aceptar las medidas preventivas, profilácticas o curativas, prescritas por el médico del empleador o por las autoridades para evitar enfermedades o accidentes.\n13. La ineptitud del trabajador para realizar la labor encomendada.\n14. El reconocimiento al trabajador de la pensión de la jubilación o invalidez estando al servicio de la empresa.\n15. La enfermedad contagiosa o crónica del trabajador, que no tenga carácter de profesional, así como cualquiera otra enfermedad o lesión que lo incapacite para el trabajo, cuya curación no haya sido posible durante ciento ochenta (180) días. El despido por esta causa no podrá efectuarse sino al vencimiento de dicho lapso y no exime al empleador de las prestaciones e indemnizaciones legales y convencionales derivadas de la enfermedad.\nEn los casos de los numerales 9 a 15 de este artículo, para la terminación del contrato, el empleador deberá dar aviso al trabajador con anticipación no menor de quince (15) días.\nB). Por parte del trabajador:\n1. El haber sufrido engaño por parte del empleador, respecto de las condiciones de trabajo.\n2. Todo acto de violencia, malos tratamientos o amenazas graves inferidas por el empleador contra el trabajador o los miembros de su familia, dentro o fuera del servicio, o inferidas dentro del servicio por los parientes, representantes o dependientes del empleador con el consentimiento o la tolerancia de éste.\n3. Cualquier acto del empleador o de sus representantes que induzca al trabajador a cometer un acto ilícito o contrario a sus convicciones políticas o religiosas.\n4. Todas las circunstancias que el trabajador no pueda prever al celebrar el contrato, y que pongan en peligro su seguridad o su salud, y que el empleador no se allane a modificar.\n5. Todo perjuicio causado maliciosamente por el empleador al trabajador en la prestación del servicio.\n6. El incumplimiento sistemático sin razones válidas por parte del empleador, de sus obligaciones convencionales o legales.\n7. La exigencia del empleador, sin razones válidas, de la prestación de un servicio distinto, o en lugares diversos de aquél para el cual se le contrató, y\n8. Cualquier violación grave de las obligaciones o prohibiciones que incumben al empleador, de acuerdo con los artículos 57 y 59 del Código Sustantivo del Trabajo, o cualquier falta grave calificada como tal en pactos o convenciones colectivas, fallos arbitrales, contratos individuales o reglamentos.\nPARAGRAFO. La parte que termina unilateralmente el contrato de trabajo debe manifestar a la otra, en el momento de la extinción, la causal o motivo de esa determinación. Posteriormente no pueden alegarse válidamente causales o motivos distintos.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "justa-causa",
+      "terminacion-contrato",
+      "despido"
+    ]
+  },
+  {
+    "id": "CST-63",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "63",
+    "radicado": null,
+    "epigrafe": "Terminación con previo aviso",
+    "texto_literal": "Son justas causas para dar por terminado unilateralmente el contrato de trabajo:\nA. Por parte del patrono:\n1o) Al haber sufrido engaño por parte del trabajador, mediante la presentación de certificados falsos para su admisión o tendientes a obtener un provecho indebido.\n2o) Todo acto de violencia, injuria, malos tratamientos o grave indisciplina en que incurra el trabajador en sus labores, contra el patrono, los miembros de su familia, el personal directivo o los compañeros de trabajo.\n3o) Todo acto grave de violencia, injuria o malos tratamientos en que incurra el trabajador fuera del servicio, en contra del patrono, de los miembros de su familia o de sus representantes o socios, jefes de taller, vigilantes o celadores.\n4o) Todo daño material causado intencionalmente a los edificios, obras, maquinarias y materias primas, instrumentos y demás objetos relacionados con el trabajo, y toda grave negligencia que ponga en peligro la seguridad de las personas o de las cosas.\n5o) Todo acto inmoral o delictuoso que el trabajador cometa en el taller, establecimiento o lugar del trabajo, o en el desempeño de sus labores.\n6o) Cualquier violación grave de las obligaciones o prohibiciones especiales que incumben al trabajador, de acuerdo con los artículos 58 a 60 del Código Sustantivo del Trabajo, o cualquier falta grave calificada como tal en pactos o convenciones colectivas, fallos arbitrales, contratos individuales o reglamentos.\n7o) La detención preventiva del trabajador por más de treinta (30) días, a menos que posteriormente sea absuelto; o el arresto correccional que exceda de ocho (8) días, o aún por tiempo menor, cuando la causa de la sanción sea suficiente por si misma para justificar la extinción del contrato.\n8o) El que el trabajador revele los secretos técnicos o comerciales o de a conocer asuntos de carácter reservado, con perjuicio de la empresa.\n9o) El deficiente rendimiento en el trabajo, en relación con la capacidad del trabajador y con el rendimiento promedio en labores análogas, cuando no se corrija en un plazo razonable a pesar del requerimiento del patrono.\n10) La sistemática inejecución, sin razones válidas, por parte del trabajador, de las obligaciones convencionales o legales.\n11) Todo vicio del trabajador que perturbe la disciplina del establecimiento.\n12) La renuencia sistemática del trabajador a aceptar las medidas preventivas, profilácticas o curativas, prescritas por el médico del patrono o por las autoridades para evitar enfermedades o accidentes.\n13) La ineptitud del trabajador para realizar la labor encomendada.\n14) El reconocimiento al trabajador de la pensión de jubilación o invalidez estando al servicio de la empresa.\n15) La enfermedad contagiosa o crónica del trabajador, que no tenga carácter de profesional, así como cualquiera otra enfermedad o lesión que lo incapacite para el trabajo, cuya curación no haya sido posible durante ciento ochenta días.\nEl despido por esta causa no podrá efectuarse sino al vencimiento de dicho lapso y no exime al patrono de las prestaciones e indemnizaciones legales y convencionales derivadas de la enfermedad.\nEn los casos de los numerales 9 a 15 de este artículo, para la terminación del contrato, el patrono deberá dar aviso al trabajador con anticipación no menor de quince (15) días.\nB. Por parte del trabajador.\n1. El haber sufrido engaño por parte del patrono, respecto de las condiciones de trabajo.\n2. Todo acto de violencia, malos tratamientos o amenazas graves inferidas por el patrono contra el trabajador o los miembros de su familia, dentro o fuera del servicio, o inferidas dentro del servicio por los parientes, representantes o dependientes del patrono con el consentimiento o la tolerancia de este.\n3. Cualquier acto del patrono o de sus representantes que induzca al trabajador a cometer un acto ilícito o contrario a sus convicciones políticas o religiosas.\n4. Todas las circunstancias que el trabajador no pueda preveer al celebrar el contrato, y que pongan en peligro su seguridad o su salud, y que el patrono no se allane a modificar.\n5. Todo perjuicio causado maliciosamente por el patrono al trabajador en la prestación del servicio.\n6. El incumplimiento sistemático sin razones válidas por parte del patrono, de sus obligaciones convencionales o legales.\n7. La exigencia del patrono, sin razones válidas, de la prestación de un servicio distinto o en lugares diversos de aquel para el cual se le contrató, y\n8. Cualquier violación grave de las obligaciones o prohibiciones que incumben al patrono, de acuerdo con los artículos 57 y 59 del Código sustantivo del Trabajo, o cualquier falta grave calificada como tal en pactos o convenciones colectivas, fallos arbitrales, contratos individuales o reglamentos.\nPARAGRAFO. La parte que termina unilateralmente el contrato de trabajo debe manifestar a la otra, en el momento de la extinción, la causal o motivo de esta determinación. Posteriormente no pueden alegarse válidamente causales o motivos distintos.",
+    "texto_verificado": true,
+    "vigencia": "subrogado por el artículo 7 del Decreto 2351 de 1965 (su contenido vigente quedó refundido en el artículo 62 del CST); se conserva el texto consolidado del CST por valor de referencia histórica",
+    "modificado_por": [
+      "Decreto 2351 de 1965 art.7"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "justa-causa",
+      "terminacion-contrato",
+      "previo-aviso",
+      "subrogado"
+    ]
+  },
+  {
+    "id": "CST-64",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "64",
+    "radicado": null,
+    "epigrafe": "Terminación unilateral del contrato de trabajo sin justa causa",
+    "texto_literal": "En todo contrato de trabajo va envuelta la condición resolutoria por incumplimiento de lo pactado, con indemnización de perjuicios a cargo de la parte responsable. Esta indemnización comprende el lucro cesante y el daño emergente.\nEn caso de terminación unilateral del contrato de trabajo sin justa causa comprobada, por parte del empleador o si éste da lugar a la terminación unilateral por parte del trabajador por alguna de las justas causas contempladas en la ley, el primero deberá al segundo una indemnización en los términos que a continuación se señalan:\nEn los contratos a término fijo, el valor de los salarios correspondientes al tiempo que faltare para cumplir el plazo estipulado del contrato; o el del lapso determinado por la duración de la obra o la labor contratada, caso en el cual la indemnización no será inferior a quince (15) días.\nEn los contratos a término indefinido la indemnización se pagará así:\na. Para trabajadores que devenguen un salario inferior a diez (10) salarios mínimos mensuales legales:\n1. Treinta (30) días de salario cuando el trabajador tuviere un tiempo de servicio no mayor de un (1) año.\n2. Si el trabajador tuviere más de un (1) año de servicio continuo se le pagarán veinte (20) días adicionales de salario sobre los treinta (30) básicos del numeral 1, por cada uno de los años de servicio subsiguientes al primero y proporcionalmente por fracción;\nb) Para trabajadores que devenguen un salario igual o superior a diez (10), salarios mínimos legales mensuales.\n1. Veinte (20) días de salario cuando el trabajador tuviere un tiempo de servicio no mayor de un (1) año.\n2. Si el trabajador tuviere más de un (1) año de servicio continuo, se le pagarán quince (15) días adicionales de salario sobre los veinte (20) días básicos del numeral 1 anterior, por cada uno de los años de servicio subsiguientes al primero y proporcionalmente por fracción.\nPARÁGRAFO TRANSITORIO. Los trabajadores que al momento de entrar en vigencia la presente ley, tuvieren diez (10) o más años al servicio continuo del empleador, se les aplicará la tabla de indemnización establecida en los literales b), c) y d) del artículo 6o. de la Ley 50 de 1990, exceptuando el parágrafo transitorio, el cual se aplica únicamente para los trabajadores que tenían diez (10) o más años el primero de enero de 1991.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [],
+    "etiquetas": [
+      "sin-justa-causa",
+      "indemnizacion",
+      "terminacion-contrato",
+      "despido"
+    ]
+  },
+  {
+    "id": "CST-65",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "65",
+    "radicado": null,
+    "epigrafe": "Indemnización por falta de pago",
+    "texto_literal": "1. Si a la terminación del contrato, el empleador no paga al trabajador los salarios y prestaciones debidas, salvo los casos de retención autorizados por la ley o convenidos por las partes, debe pagar al asalariado, como indemnización, una suma igual al último salario diario por cada día de retardo, hasta por veinticuatro (24) meses, o hasta cuando el pago se verifique si el período es menor. Si transcurridos veinticuatro (24) meses contados desde la fecha de terminación del contrato, el trabajador no ha iniciado su reclamación por la vía ordinaria o si presentara la demanda, no ha habido pronunciamiento judicial, el empleador deberá pagar al trabajador intereses moratorios a la tasa máxima de créditos de libre asignación certificados por la Superintendencia Bancaria, a partir de la iniciación del mes veinticinco (25) hasta cuando el pago se verifique.\nDichos intereses los pagará el empleador sobre las sumas adeudadas al trabajador por concepto de salarios y prestaciones en dinero.\n2. Si no hay acuerdo respecto del monto de la deuda, o si el trabajador se niega a recibir, el empleador cumple con sus obligaciones consignando ante el juez de trabajo y, en su defecto, ante la primera autoridad política del lugar, la suma que confiese deber, mientras la justicia de trabajo decide la controversia.\nPARÁGRAFO 1°. Para proceder a la terminación del contrato de trabajo establecido en el artículo 64 del Código Sustantivo del Trabajo, el empleador le deberá informar por escrito al trabajador, a la última dirección registrada, dentro de los sesenta (60) días siguientes a la terminación del contrato, el estado de pago de las cotizaciones de Seguridad Social y parafiscalidad sobre los salarios de los últimos tres meses anteriores a la terminación del contrato, adjuntando los comprobantes de pago que los certifiquen. Si el empleador no demuestra el pago de dichas cotizaciones, la terminación del contrato no producirá efecto. Sin embargo, el empleador podrá pagar las cotizaciones durante los sesenta (60) días siguientes, con los intereses de mora.\nPARÁGRAFO 2o. Lo dispuesto en el inciso 1o. de este artículo solo se aplicará a los trabajadores que devenguen más de un (1) salario mínimo mensual vigente. Para los demás seguirá en plena vigencia lo dispuesto en el artículo 65 del Código Sustantivo de Trabajo vigente.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [],
+    "etiquetas": [
+      "indemnizacion-moratoria",
+      "falta-de-pago",
+      "terminacion-liquidacion",
+      "salarios-debidos"
+    ]
+  },
+  {
+    "id": "CST-115",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "115",
+    "radicado": null,
+    "epigrafe": "Procedimiento para aplicar sanciones",
+    "texto_literal": "En todas las actuaciones para aplicar sanciones disciplinarias, se deberán aplicar las garantías del debido proceso, esto es, como mínimo los siguientes principios: dignidad, presunción de inocencia, in dubio pro disciplinado, proporcionalidad, derecho a la defensa, contradicción y controversia de las pruebas, intimidad, lealtad y buena fe, imparcialidad, respeto al buen nombre y a la honra, y non bis in idem. También se deberá aplicar como mínimo el siguiente procedimiento:\n1. Comunicación formal de la apertura del proceso al trabajador o trabajadora.\n2. La indicación de hechos, conductas u omisiones que motivan el proceso, la cual deberá ser por escrito.\n3. El traslado al trabajador o trabajadora de todas y cada una de las pruebas que fundamentan los hechos, conductas u omisiones del proceso.\n4. La indicación de un término durante el cual el trabajador o trabajadora pueda manifestarse frente a los motivos del proceso, controvertir las pruebas y allegar las que considere necesarias para sustentar su defensa el cual en todo caso no podrá ser inferior a 5 días. En caso de que la defensa del trabajador frente a los hechos, conductas u omisiones que motivaron el proceso sea verbal, se hará un acta en la que se transcribirá la versión o descargos rendidos por el trabajador.\n5. El pronunciamiento definitivo debidamente motivado identificando específicamente la(s) causa(s) o motivo(s) de la decisión.\n6. De ser el caso, la imposición de una sanción proporcional a los hechos u omisiones que la motivaron.\n7. La posibilidad del trabajador de impugnar la decisión.\nParágrafo 1°. Este procedimiento deberá realizarse en un término razonable atendiendo al principio de inmediatez, sin perjuicio de que esté estipulado un término diferente en Convención Colectiva, Laudo Arbitral o Reglamento Interno de Trabajo.\nParágrafo 2°. Si el trabajador o trabajadora se encuentra afiliado a una organización sindical, podrá estar asistido o acompañado por uno (1) o dos (2) representantes del sindicato que sean trabajadores de la empresa y se encuentren presentes al momento de la diligencia, y estos tendrán el derecho de velar por el cumplimiento de los principios de derecho de defensa y debido proceso del trabajador sindicalizado, dando fe de ellos al final del procedimiento.\nParágrafo 3°. El trabajador con discapacidad deberá contar con medidas y ajustes razonables que garanticen la comunicación y comprensión recíproca en el marco del debido proceso.\nParágrafo 4°. El empleador deberá actualizar el Reglamento Interno de Trabajo, acorde con los parámetros descritos dentro de los doce (12) meses siguientes a la entrada en vigencia de la presente Ley.\nParágrafo 5°. Este procedimiento podrá realizarse utilizando las tecnologías de la información y las comunicaciones, siempre y cuando el trabajador cuente con estas herramientas a disposición.\nParágrafo 6°. Este procedimiento no aplicará a los trabajadores del hogar, ni a las micro y pequeñas empresas de menos de diez (10) trabajadores, definidas en el Decreto 957 de 2019. Este tipo de empleadores solo tendrá la obligación de escuchar previamente al trabajador sobre los hechos que se le imputan, respetando las garantías del derecho de defensa y del debido proceso. Dentro de los doce (12) meses siguientes a la entrada en vigencia de la presente ley, el Ministerio del Trabajo impulsará un programa de acompañamiento y fortalecimiento a micro y pequeñas empresas para garantizar la aplicación del debido proceso.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.7"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "reglamenta",
+        "destino": "CP-29"
+      },
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "debido-proceso",
+      "sanciones-disciplinarias",
+      "procedimiento-disciplinario",
+      "reformado-2466"
+    ]
+  },
+  {
+    "id": "CST-120",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "120",
+    "radicado": null,
+    "epigrafe": "Publicación",
+    "texto_literal": "Una vez cumplida la obligación del artículo 119 del presente Código, el empleador debe publicar el reglamento de trabajo, mediante la fijación de dos (2) copias en carácter legible, en dos (2) sitios distintos y a través de medio virtual, al cual los trabajadores deberán poder acceder en cualquier momento. Si hubiera varios lugares de trabajo separados, la fijación debe hacerse en cada uno de ellos, salvo que se hiciere la publicación del reglamento a través de medio virtual, caso en el cual no se requerirá efectuar varias publicaciones físicas.\nAdicionalmente, el empleador podrá cargar el reglamento de trabajo en la página web de la empresa, si cuenta con una, o enviarlo a los trabajadores por cualquier canal digital de su propiedad, como el correo electrónico, dejando constancia de dicha actuación.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.8"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "reglamento-interno-trabajo",
+      "publicacion",
+      "medio-virtual",
+      "reformado-2466"
+    ]
+  },
+  {
+    "id": "CST-488",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "488",
+    "radicado": null,
+    "epigrafe": "Regla general (prescripción)",
+    "texto_literal": "Las acciones correspondientes a los derechos regulados en este Código prescriben en tres (3) años, salvo en los casos de prescripciones especiales establecidas en el Código Procesal del Trabajo y de la Seguridad Social o en el presente estatuto. En el evento en que se reclamen derechos emanados de una relación de trabajo, dicho término se contará desde que la respectiva obligación se hace exigible, salvo en los casos de prescripciones especiales establecidas en el Código Procesal del Trabajo y de la Seguridad Social.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.62"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "prescripcion",
+      "acciones-laborales",
+      "termino-tres-anos",
+      "reformado-2466"
+    ]
+  }
+]

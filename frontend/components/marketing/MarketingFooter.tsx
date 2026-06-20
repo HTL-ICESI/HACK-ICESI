@@ -5,9 +5,9 @@ export function MarketingFooter() {
     <footer className="border-t border-n300/60 bg-surface px-6 py-7">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-wrap items-center gap-4">
-          <Logo />
+          <Logo hgSeal />
           <span className="text-[13px] text-toga-300">
-            © 2026 · Edición Hurtado Gandini
+            © 2026 · WorkLab · una solución de HG Hurtado Gandini
           </span>
           <nav
             className="ml-auto flex gap-5 text-[13px]"

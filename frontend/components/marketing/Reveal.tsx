@@ -12,31 +12,26 @@ interface RevealProps {
 }
 
 /**
- * Entrada suave al entrar en viewport.
- * El contenido es VISIBLE en SSR/HTML estático (shown=true por defecto).
- * En el cliente, si el elemento no está aún en viewport al montar,
- * se resetea a oculto y el IntersectionObserver lo revela al entrar.
- * Así las páginas estáticas nunca quedan en blanco por hidratación tardía.
+ * Entrada suave al entrar en viewport (IntersectionObserver, no scroll handler).
+ * Solo transform/opacity/filter. Respeta prefers-reduced-motion: si está activo,
+ * muestra el contenido sin animación.
  */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  // true = visible en SSR/HTML estático; el cliente puede resetearlo para animar.
-  const [shown, setShown] = useState(true);
+  const [shown, setShown] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return; // ya está shown=true
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    if (reduce) {
+      setShown(true);
+      return;
+    }
 
-    // Si el elemento ya está en el viewport al montar, no ocultamos (evita flash).
-    const rect = el.getBoundingClientRect();
-    const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    if (inView) return;
-
-    // Fuera del viewport: ocultamos y esperamos que entre.
-    setShown(false);
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -46,16 +41,16 @@ export function Reveal({ children, className, delay = 0 }: RevealProps) {
           }
         }
       },
-      { threshold: 0, rootMargin: "0px" },
+      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [delay]);
+  }, []);
 
   return (
     <div
       ref={ref}
-      style={shown ? undefined : { transitionDelay: `${delay}ms` }}
+      style={{ transitionDelay: `${delay}ms` }}
       className={cn(
         "transition-[opacity,transform,filter] duration-700 ease-snappy",
         shown

@@ -130,7 +130,7 @@ export function LiquidationTable({
       </Table>
 
       {/* Total general = exposición completa. Barra "money" (momento de credibilidad). */}
-      <div className="flex items-center gap-3 border-t border-n300/50 bg-toga px-4 py-3.5">
+      <div className="flex items-center gap-3 border-t border-n300/50 bg-carbon px-4 py-3.5">
         <span className="flex-1 text-[13px] font-medium text-lienzo/70">
           Total a reconocer
         </span>

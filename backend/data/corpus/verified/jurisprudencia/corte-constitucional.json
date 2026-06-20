@@ -1,0 +1,233 @@
+[
+  {
+    "id": "C-593-2014",
+    "norma_id": "CC",
+    "norma": "Corte Constitucional",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "C-593/2014",
+    "epigrafe": "Debido proceso disciplinario del trabajador y exequibilidad del art. 115 CST",
+    "texto_literal": "La Corte declaró EXEQUIBLE el artículo 115 del CST (procedimiento para sanciones), interpretado conforme al artículo 29 de la Constitución: la obligación de oír previamente al trabajador implica el respeto pleno de las garantías del debido proceso. El empleador, como particular con potestad sancionatoria, debe garantizar antes de imponer cualquier sanción del Reglamento Interno: comunicación formal de apertura, formulación de cargos, traslado de pruebas, término para descargos y controvertir pruebas, decisión motivada y congruente, sanción proporcional y posibilidad de recurrir ante el superior jerárquico y la jurisdicción ordinaria. En la misma providencia declaró exequible la expresión demandada del art. 34 CST sobre solidaridad del beneficiario de la obra y se inhibió frente al art. 356.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "Fuente oficial (relatoría)",
+    "fuente_url": "https://app.vlex.com/vid/539767018",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "disciplinario"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-115"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "CP-29"
+      }
+    ],
+    "etiquetas": [
+      "ancla-disciplinario",
+      "debido-proceso",
+      "art.115-CST",
+      "art.29-CN",
+      "potestad-sancionatoria-empleador",
+      "reglamento-interno-trabajo",
+      "exequibilidad",
+      "art.34-CST-solidaridad",
+      "expediente-D-10032",
+      "Sala-Plena",
+      "disciplinario",
+      "MP:Jorge Ignacio Pretelt Chaljub",
+      "2014-08-20"
+    ]
+  },
+  {
+    "id": "SU-061-2023",
+    "norma_id": "CC",
+    "norma": "Corte Constitucional",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SU-061/2023",
+    "epigrafe": "Estabilidad laboral reforzada por salud no exige PCL superior al 15%",
+    "texto_literal": "La Sala Plena unifica que la estabilidad laboral reforzada por razones de salud no deriva exclusivamente de la Ley 361 de 1997 ni exige acreditar una pérdida de capacidad laboral calificada superior al 15%, sino que ampara a toda persona en condición de debilidad manifiesta cuya salud le impida o limite desempeñar sus labores habituales. En consecuencia, el despido de un trabajador en esa situación, sin autorización del Ministerio del Trabajo, se presume discriminatorio y queda a cargo del empleador desvirtuar dicha presunción. Concede el amparo por desconocimiento del precedente (SU-049/17 y SU-380/21), defecto sustantivo y violación directa de la Constitución, y exhorta a la Sala de Casación Laboral de la CSJ a modificar su precedente para no exigir la calificación de PCL.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "Fuente oficial (relatoría)",
+    "fuente_url": "https://app.vlex.com/vid/933183235",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "clasificacion-vinculo"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-64"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "SL1103-2021"
+      }
+    ],
+    "etiquetas": [
+      "estabilidad-laboral-reforzada",
+      "salud",
+      "debilidad-manifiesta",
+      "Ley-361-1997",
+      "art.26",
+      "presuncion-despido-discriminatorio",
+      "no-exige-PCL-15%",
+      "sentencia-unificacion",
+      "tutela-contra-providencia-judicial",
+      "ancla-SU-061-2023",
+      "SU-049-2017",
+      "SU-380-2021",
+      "estabilidad-reforzada",
+      "MP:Diana Fajardo Rivera",
+      "2023-03-09"
+    ]
+  },
+  {
+    "id": "SU-070-2013",
+    "norma_id": "CC",
+    "norma": "Corte Constitucional",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SU-070/2013",
+    "epigrafe": "Unificacion del fuero de maternidad: alcance segun conocimiento y modalidad contractual",
+    "texto_literal": "La Corte unifica los criterios sobre estabilidad laboral reforzada de la mujer embarazada o en lactancia (fuero de maternidad). El conocimiento del embarazo por el empleador NO es requisito para que exista proteccion, sino que solo determina su GRADO: si conocia (por notificacion, hecho notorio -p.ej. 5 mes de gestacion-, permisos/incapacidades o conducta del empleador), la proteccion es integral (presuncion de despido discriminatorio, ineficacia del despido, reintegro y pago de salarios y prestaciones, art. 239 CST); si no conocia, la proteccion es mas debil, fundada en la solidaridad (reconocimiento de cotizaciones a salud hasta acceder a la licencia de maternidad). El alcance tambien depende de la modalidad de vinculacion (termino indefinido, fijo, obra o labor, prestacion de servicios, cooperativas y servicios temporales): la modalidad no hace nugatoria la proteccion, solo modula la medida. Para despedir validamente el empleador debe demostrar justa causa y contar con permiso del inspector de trabajo.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "Fuente oficial (relatoría)",
+    "fuente_url": "https://app.vlex.com/vid/437534282",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "clasificacion-vinculo"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "fuero-de-maternidad",
+      "estabilidad-laboral-reforzada",
+      "mujer-embarazada",
+      "lactancia",
+      "ancla-SU-070-2013",
+      "conocimiento-del-embarazo",
+      "hecho-notorio",
+      "presuncion-despido-discriminatorio",
+      "articulo-239-CST",
+      "permiso-inspector-de-trabajo",
+      "modalidad-de-vinculacion",
+      "principio-de-solidaridad",
+      "sentencia-de-unificacion",
+      "expediente-T-2361117",
+      "estabilidad-reforzada",
+      "MP:Alexei Julio Estrada",
+      "2013-02-13"
+    ]
+  },
+  {
+    "id": "SU-087-2022",
+    "norma_id": "CC",
+    "norma": "Corte Constitucional",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SU-087/2022",
+    "epigrafe": "Estabilidad laboral reforzada por salud sin calificacion de PCL",
+    "texto_literal": "La Sala Plena unifica que gozan de estabilidad laboral reforzada las personas que, al momento del despido, no estan incapacitadas ni tienen calificacion de perdida de capacidad laboral, pero cuya patologia produce limitaciones en su salud que afectan el desarrollo de su labor; la proteccion no exige el porcentaje moderado/severo/profundo del Decreto 2463 sino tres supuestos: condicion de salud que dificulte significativamente el desempeno, conocimiento del empleador antes del despido y ausencia de justificacion suficiente, presumiendose el despido discriminatorio con carga de la prueba en cabeza del empleador, quien debe acudir a la autoridad laboral por el permiso del art.26 Ley 361/1997. Ademas reitera que el juez que se aparte del precedente constitucional debe satisfacer las cargas de transparencia y de argumentacion, las cuales incumplio la Sala de Casacion Laboral. Concede el amparo, revoca la sentencia de casacion SL3937-2020 y confirma la decision de segunda instancia.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial (Rama Judicial / Corte)",
+    "fuente_url": "archivo local oficial aportado por el equipo",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "clasificacion-vinculo"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-64"
+      },
+      {
+        "tipo": "interpreta",
+        "destino": "SL1103-2021"
+      }
+    ],
+    "etiquetas": [
+      "estabilidad-laboral-reforzada",
+      "fuero-de-salud",
+      "Ley-361-1997-art26",
+      "debilidad-manifiesta",
+      "presuncion-despido-discriminatorio",
+      "carga-de-la-prueba-empleador",
+      "precedente-constitucional",
+      "carga-de-transparencia",
+      "carga-de-argumentacion",
+      "tutela-contra-providencia-judicial",
+      "ancla-SU-087-2022",
+      "linea-SU-049-2017",
+      "linea-SU-380-2021",
+      "estabilidad-reforzada",
+      "MP:José Fernando Reyes Cuartas",
+      "2022-03-09"
+    ]
+  },
+  {
+    "id": "SU-049-2017",
+    "norma_id": "CC",
+    "norma": "Corte Constitucional",
+    "tipo": "jurisprudencia",
+    "articulo": null,
+    "radicado": "SU-049/2017",
+    "epigrafe": "Estabilidad ocupacional reforzada por salud extendida a contratistas",
+    "texto_literal": "La estabilidad ocupacional reforzada protege a quien sufre una afectación de salud que le impide o dificulta sustancialmente desempeñar sus labores en condiciones regulares, con independencia de que tenga o no calificación de pérdida de capacidad laboral; no se exige calificación previa de PCL. Esta garantía cobija incluso a contratistas de prestación de servicios en situación de debilidad manifiesta, de modo que el contratante no puede terminar el vínculo de forma unilateral sin autorización previa del inspector del trabajo. Ante un despido en esas circunstancias, el remedio es declarar la ineficacia de la terminación, ordenar el reintegro o renovación del contrato en condiciones análogas, pagar las remuneraciones dejadas de percibir y reconocer la indemnización de 180 días de salario del artículo 26 de la Ley 361 de 1997.",
+    "texto_verificado": false,
+    "verificada": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "Fuente oficial (relatoría)",
+    "fuente_url": "https://www.corteconstitucional.gov.co/relatoria/2017/su049-17.htm",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "terminacion-liquidacion",
+      "clasificacion-vinculo"
+    ],
+    "relaciones": [
+      {
+        "tipo": "interpreta",
+        "destino": "CST-64"
+      }
+    ],
+    "etiquetas": [
+      "estabilidad-ocupacional-reforzada",
+      "debilidad-manifiesta",
+      "contrato-prestacion-servicios",
+      "salud",
+      "sin-calificacion-pcl",
+      "ineficacia-despido",
+      "reintegro",
+      "Ley-361-de-1997",
+      "indemnizacion-180-dias",
+      "inspector-del-trabajo",
+      "fuente-verificada",
+      "estabilidad-reforzada",
+      "MP:María Victoria Calle Correa",
+      "2017-02-02"
+    ]
+  }
+]

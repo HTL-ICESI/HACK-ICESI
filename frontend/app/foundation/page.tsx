@@ -32,7 +32,7 @@ export default function FoundationPreview() {
           </span>
         </header>
 
-        <div className="flex items-center gap-4 rounded-lg bg-toga p-6 shadow-bezel">
+        <div className="flex items-center gap-4 rounded-lg bg-carbon p-6 shadow-bezel">
           <Logo tone="light" />
           <span className="ml-auto font-mono text-[11px] text-lienzo/60">
             negativo · sidebar

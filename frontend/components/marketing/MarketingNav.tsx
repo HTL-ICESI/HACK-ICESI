@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import { Logo } from "@/components/brand/Logo";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { cn } from "@/lib/utils";
 
 interface NavLink {
@@ -52,8 +53,8 @@ export function MarketingNav() {
         }}
       >
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" aria-label="Cerebro Laboral — inicio">
-            <Logo />
+          <Link href="/" aria-label="Inicio de WorkLab">
+            <Logo imgClassName="h-11" />
           </Link>
 
           <div className="hidden items-center gap-7 md:flex">
@@ -68,11 +69,18 @@ export function MarketingNav() {
           </div>
 
           <div className="flex items-center gap-3">
+            <ThemeToggle />
             <Link
               href="/login"
-              className="hidden rounded-full bg-toga px-5 py-2 text-sm font-medium text-lienzo transition-colors hover:bg-toga-700 sm:inline-flex"
+              className="hidden text-sm font-medium text-toga transition-colors hover:text-acento md:inline-flex"
             >
               Iniciar sesión
+            </Link>
+            <Link
+              href="/login"
+              className="hidden rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:inline-flex"
+            >
+              Ver el demo
             </Link>
 
             {/* Hamburguesa morph (mobile) */}
@@ -124,9 +132,9 @@ export function MarketingNav() {
               <Link
                 href="/login"
                 onClick={() => setOpen(false)}
-                className="mt-1 rounded-full bg-toga px-5 py-2.5 text-center text-sm font-medium text-lienzo hover:bg-toga-700"
+                className="mt-1 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground hover:bg-primary/90"
               >
-                Iniciar sesión
+                Ver el demo
               </Link>
             </div>
           </div>

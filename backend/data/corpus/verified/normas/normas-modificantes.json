@@ -1,0 +1,21 @@
+[
+  {
+    "id": "L2466-REFORMA",
+    "norma_id": "L2466/2025",
+    "norma": "Ley 2466 de 2025 — Reforma Laboral para el trabajo decente y digno",
+    "tipo": "ley",
+    "articulo": null,
+    "radicado": null,
+    "epigrafe": "Reforma Laboral 2025 (instrumento modificante del CST)",
+    "texto_literal": "Ley 2466 de 2025 (25 de junio de 2025, Diario Oficial 53.160). Modifica parcialmente normas laborales y adopta una Reforma Laboral. Modifica/adiciona, entre otros, los artículos 3, 23 (lit. b), 46, 47, 59, 115, 120, 160, 161, 162, 179 y 488 del CST, e introduce el régimen de trabajo en plataformas digitales de reparto (arts. 24-30). Este nodo representa la reforma como instrumento; el texto vigente de cada artículo está en su nodo respectivo.",
+    "texto_verificado": true,
+    "vigencia": "vigente",
+    "modificado_por": [],
+    "fuente": "PDF oficial - Diario Oficial 53.160 (25-jun-2025)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=260676",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["clasificacion-vinculo", "riesgo-reclasificacion", "jornada", "obligaciones", "terminacion-liquidacion", "disciplinario"],
+    "relaciones": [],
+    "etiquetas": ["reforma-2025", "instrumento-modificante", "watch-list"]
+  }
+]

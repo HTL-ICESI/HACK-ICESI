@@ -96,13 +96,13 @@ export function Sidebar({ mobileOpen, onClose }: SidebarProps) {
         <button
           aria-label="Cerrar menú"
           onClick={onClose}
-          className="fixed inset-0 z-40 bg-toga/50 backdrop-blur-sm md:hidden"
+          className="fixed inset-0 z-40 bg-carbon/50 backdrop-blur-sm md:hidden"
         />
       )}
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-toga text-lienzo transition-transform duration-300 ease-fluid md:static md:z-auto md:translate-x-0",
+          "fixed inset-y-0 left-0 z-50 flex w-64 flex-col bg-carbon text-lienzo transition-transform duration-300 ease-fluid md:static md:z-auto md:translate-x-0",
           mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0",
         )}
       >

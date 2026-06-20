@@ -80,8 +80,8 @@ def test_canary_todas_las_normas_de_gap_rules_existen_en_corpus():
     Actualizar este test cada vez que se agrega una nueva regla en gap_rules.py.
     """
     normas_en_gap_rules = [
-        ("Ley 2101/2021", "art. 3"),   # g1 — jornada
-        ("Ley 2466/2025", "art. 5"),   # g2 — reclasificacion
+        ("Ley 2101/2021", "art. 2"),   # g1 — jornada (42h, modifica CST 161)
+        ("CST",           "art. 24"),  # g2 — reclasificacion (presuncion laboral)
         ("CST",           "art. 186"), # g3 — vacaciones
         ("CST",           "art. 46"),  # g4 — vencimiento
         ("Ley 100/1993",  "art. 22"),  # g5 — seguridad social

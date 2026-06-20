@@ -86,7 +86,7 @@ def test_analyze_prestacion_servicios_retorna_gap_g2():
     assert resp.status_code == 200
     gaps = {g["gap_id"]: g for g in resp.json()["gaps"]}
     assert "g2" in gaps
-    assert gaps["g2"]["citation"]["norm_id"] == "Ley 2466/2025"
+    assert gaps["g2"]["citation"]["norm_id"] == "CST"
     assert gaps["g2"]["remedy_type"] == "contrato_corregido"
 
 

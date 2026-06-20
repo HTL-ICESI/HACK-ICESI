@@ -14,6 +14,7 @@ import { GapsList } from "@/components/compliance/GapsList";
 import { LiquidationTable } from "@/components/compliance/LiquidationTable";
 import { RemediationPanel } from "@/components/compliance/RemediationPanel";
 import { getBatchResult } from "@/lib/api";
+import { liquidationRequest } from "@/lib/liquidation-request";
 import type { BatchItem, BatchResult } from "@/lib/types";
 
 interface Span { start: number; end: number }
@@ -154,7 +155,13 @@ export function ContractModal({
             </TabsContent>
 
             <TabsContent value="liquidacion" className="mt-4">
-              <LiquidationTable data={result.liquidation} />
+              {/* Prefiere el request exacto del lote; si es un lote viejo que no
+                  lo trae, reconstruye desde el extract para que el botón de Excel
+                  siempre aparezca. */}
+              <LiquidationTable
+                data={result.liquidation}
+                request={result.liquidation.request ?? liquidationRequest(result.extract)}
+              />
             </TabsContent>
 
             <TabsContent value="subsanacion" className="mt-4">

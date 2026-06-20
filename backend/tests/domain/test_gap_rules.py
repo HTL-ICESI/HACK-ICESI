@@ -50,7 +50,7 @@ def test_jornada_48h_genera_gap_alta():
     g = jornada[0]
     assert g.severity == "alta"
     assert g.norm_id == "Ley 2101/2021"
-    assert g.article == "art. 3"
+    assert g.article == "art. 2"
     assert g.remedy_type == "otrosi"
 
 
@@ -69,8 +69,8 @@ def test_prestacion_servicios_genera_gap_reclasificacion():
     reclas = [g for g in gaps if g.gap_id == "g2"]
     assert len(reclas) == 1
     g = reclas[0]
-    assert g.norm_id == "Ley 2466/2025"
-    assert g.article == "art. 5"
+    assert g.norm_id == "CST"
+    assert g.article == "art. 24"
     assert g.remedy_type == "contrato_corregido"
 
 

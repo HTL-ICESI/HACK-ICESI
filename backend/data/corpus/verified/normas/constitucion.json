@@ -1,0 +1,36 @@
+[
+  {
+    "id": "CP-53",
+    "norma_id": "CP",
+    "norma": "Constitución Política de Colombia (1991)",
+    "tipo": "constitucion",
+    "articulo": "53",
+    "radicado": null,
+    "epigrafe": "Principios mínimos fundamentales del trabajo — primacía de la realidad",
+    "texto_literal": "El Congreso expedirá el estatuto del trabajo. La ley correspondiente tendrá en cuenta por lo menos los siguientes principios mínimos fundamentales: (...) primacía de la realidad sobre formalidades establecidas por los sujetos de las relaciones laborales (...). Los convenios internacionales del trabajo debidamente ratificados hacen parte de la legislación interna.",
+    "texto_verificado": false,
+    "fuente": "Constitución Política — pendiente confirmar literal contra fuente primaria",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4125",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["riesgo-reclasificacion", "clasificacion-vinculo"],
+    "relaciones": [],
+    "etiquetas": ["primacia-realidad", "principios-laborales", "reclasificacion"]
+  },
+  {
+    "id": "CP-29",
+    "norma_id": "CP",
+    "norma": "Constitución Política de Colombia (1991)",
+    "tipo": "constitucion",
+    "articulo": "29",
+    "radicado": null,
+    "epigrafe": "Debido proceso",
+    "texto_literal": "El debido proceso se aplicará a toda clase de actuaciones judiciales y administrativas. (...) Quien sea sindicado tiene derecho a la defensa y a la asistencia de un abogado (...); a un debido proceso público sin dilaciones injustificadas; a presentar pruebas y a controvertir las que se alleguen en su contra (...). Es nula, de pleno derecho, la prueba obtenida con violación del debido proceso.",
+    "texto_verificado": false,
+    "fuente": "Constitución Política — pendiente confirmar literal contra fuente primaria",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=4125",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": ["disciplinario"],
+    "relaciones": [],
+    "etiquetas": ["debido-proceso", "disciplinario", "defensa"]
+  }
+]

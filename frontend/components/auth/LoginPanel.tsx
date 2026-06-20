@@ -74,7 +74,7 @@ export function LoginPanel() {
   return (
     <div className="flex min-h-screen">
       {/* ── Panel izquierdo — Identidad y seguridad ── */}
-      <div className="relative hidden flex-col justify-between bg-toga p-10 lg:flex lg:w-[52%] xl:w-[55%]">
+      <div className="relative hidden flex-col justify-between bg-carbon p-10 lg:flex lg:w-[52%] xl:w-[55%]">
         {/* Glow de marca */}
         <div
           aria-hidden="true"

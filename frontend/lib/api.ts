@@ -208,11 +208,18 @@ export async function generateDisciplinaryDocs(
   diligence_state: DiligenceState,
   transcript: string,
   lawyer_name = "",
+  caso?: {
+    worker_name?: string;
+    worker_id?: string;
+    company_name?: string;
+    charges?: string;
+    diligence_date?: string;
+  },
 ): Promise<DisciplinaryDocsResponse> {
   if (USE_MOCKS) return mock(mockDisciplinaryDocs);
   return request<DisciplinaryDocsResponse>("/api/disciplinary/documents", {
     method: "POST",
-    body: { session_id, diligence_state, transcript, lawyer_name },
+    body: { session_id, diligence_state, transcript, lawyer_name, ...(caso ?? {}) },
   });
 }
 
@@ -247,6 +254,8 @@ export interface EvidenceWhatsAppPayload {
   worker_name: string;
   company_name: string;
   charges_summary: string;
+  /** Si se pasa, el backend arma SOLO los adjuntos firmados desde el expediente. */
+  process_id?: string;
   evidence_names?: string[];
   evidence_urls?: string[];
   call_date?: string;
@@ -262,6 +271,43 @@ export async function sendEvidenceWhatsApp(
   return request<EvidenceWhatsAppResult>("/api/disciplinary/evidence/whatsapp", {
     method: "POST",
     body: payload,
+  });
+}
+
+/** Envía un documento generado (citación/acta) por WhatsApp como PDF adjunto. */
+export async function sendDocumentWhatsApp(payload: {
+  to_number: string;
+  title: string;
+  body_markdown: string;
+  worker_name?: string;
+  company_name?: string;
+}): Promise<{ sent: boolean; preview: string; media?: string[]; sid?: string; note?: string; error?: string }> {
+  return request("/api/disciplinary/document/whatsapp", { method: "POST", body: payload });
+}
+
+/** Crea un expediente disciplinario y devuelve su process_id. */
+export async function createExpediente(payload: {
+  worker_name: string;
+  worker_id: string;
+  employer_name: string;
+  contract_type: string;
+  doc_id?: string;
+}): Promise<{ process_id: string }> {
+  return request("/api/disciplinary/expediente", { method: "POST", body: payload });
+}
+
+/** Sube un archivo de evidencia al expediente (bytes reales → Twilio los adjunta). */
+export async function uploadDisciplinaryEvidence(
+  processId: string,
+  file: File,
+  uploadedBy: string,
+): Promise<unknown> {
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("uploaded_by", uploadedBy || "abogado");
+  return request(`/api/disciplinary/${encodeURIComponent(processId)}/evidence`, {
+    method: "POST",
+    formData,
   });
 }
 

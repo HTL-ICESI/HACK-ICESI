@@ -17,6 +17,8 @@ el flujo del frontend (payload delgado: estado + transcripción).
 """
 from __future__ import annotations
 
+from datetime import date as _date
+
 from app.core.tenancy import TenantContext
 from app.core.audit import AuditLog
 from app.core.errors import BlockedOutput
@@ -61,60 +63,138 @@ def _build_evidence_message(
         f"El tratamiento de sus datos se hace conforme a la ley de habeas data."
     )
 
-# Plantillas mínimas por tipo de documento — el LLM amplía la prosa, sin tocar citas.
-_SKELETONS: dict[str, str] = {
-    "citacion_descargos": """\
-## Citación a Diligencia de Descargos
+_MESES_ES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+             "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
-**Referencia:** Procedimiento disciplinario — art. 115 Código Sustantivo del Trabajo
 
-**Trabajador citado:** {worker_name}
-**Cargos que se le formulan:** {charges}
-**Fecha y hora de la diligencia:** {date_time}
-**Lugar:** Instalaciones de la empresa
+def _fecha_es(d: _date) -> str:
+    return f"{d.day} de {_MESES_ES[d.month - 1]} de {d.year}"
 
-Por medio de la presente, se le cita a usted a la diligencia de descargos para que
-ejerza su derecho de defensa y contradicción conforme al art. 29 de la Constitución
-Política y el art. 115 del Código Sustantivo del Trabajo (modificado por la Ley 2466
-de 2025). Usted dispone de un término no inferior a cinco (5) días hábiles para
-preparar su defensa.
 
-Usted tiene derecho a estar acompañado por un representante o testigo de su elección.
-""",
-    "acta_descargos": """\
-## Acta de Diligencia de Descargos
+# Plantillas DETERMINISTAS, rellenas con la data real del trabajador. Sin LLM:
+# la información del empleado queda garantizada y el formato es siempre limpio.
+_TPL_CITACION = """\
+# CITACIÓN A DILIGENCIA DE DESCARGOS
 
-**Trabajador:** {worker_name}
-**Fecha:** {date_time}
-**Instructor del proceso:** {instructor}
+**{company_name}**
+{today}
 
-**Resumen de la diligencia:**
+Señor(a)
+**{worker_name}**
+C.C. {worker_id}
 
-{transcript_summary}
+**Asunto:** Citación a diligencia de descargos — proceso disciplinario
 
-**Pruebas aportadas por la empresa:** [Descripción de evidencias]
-**Descargos del trabajador:** [Resumen de la defensa del trabajador]
+Respetado(a) señor(a):
 
-Se da por terminada la diligencia. Firman las partes en señal de conformidad.
-""",
-    "decision_final": """\
-## Decisión Final del Proceso Disciplinario
+Por medio de la presente, **{company_name}** le cita formalmente a una diligencia de
+descargos, con el fin de que ejerza su derecho de defensa y contradicción frente a los
+siguientes hechos que se le imputan:
 
-**Trabajador:** {worker_name}
-**Proceso:** Diligencia de descargos — {date_time}
+> {charges}
+
+| | |
+|---|---|
+| **Fecha y hora de la diligencia** | {diligence_date} |
+| **Modalidad** | Llamada telefónica grabada |
+| **Término para preparar su defensa** | mínimo cinco (5) días hábiles |
+
+Esta citación se realiza en garantía del **debido proceso** consagrado en el artículo 29
+de la Constitución Política y el artículo 115 del Código Sustantivo del Trabajo. Usted
+tiene derecho a **estar acompañado** por un representante del sindicato o por dos
+compañeros de trabajo, y a presentar las pruebas que considere pertinentes.
+
+Atentamente,
+
+**{lawyer_name}**
+En representación de {company_name}
+"""
+
+_TPL_ACTA = """\
+# ACTA DE DILIGENCIA DE DESCARGOS
+
+**{company_name}**
+
+| | |
+|---|---|
+| **Trabajador** | {worker_name} |
+| **Documento de identidad** | C.C. {worker_id} |
+| **Fecha de la diligencia** | {diligence_date} |
+| **Conduce la diligencia** | {lawyer_name} |
+| **Modalidad** | Llamada telefónica grabada |
+
+**Hechos / cargos formulados:**
+
+> {charges}
+
+**Desarrollo de la diligencia:**
+
+Siendo la fecha y hora señaladas, se dio inicio a la diligencia de descargos. Se leyeron
+al trabajador los cargos imputados y se le garantizó el derecho de defensa y
+contradicción. A continuación se deja constancia de los descargos rendidos por el
+trabajador:
+
+> {transcript}
+
+**Constancia del debido proceso:** se garantizó al trabajador el derecho de audiencia,
+defensa y contradicción conforme al artículo 115 del Código Sustantivo del Trabajo y al
+artículo 29 de la Constitución Política.
+
+Se da por terminada la diligencia.
+
+___________________________
+**{lawyer_name}**
+En representación de {company_name}
+
+___________________________
+**{worker_name}**
+C.C. {worker_id} — Trabajador
+"""
+
+_TPL_DECISION = """\
+# DECISIÓN FINAL DEL PROCESO DISCIPLINARIO
+
+**{company_name}**
+{today}
+
+| | |
+|---|---|
+| **Trabajador** | {worker_name} |
+| **Documento de identidad** | C.C. {worker_id} |
+| **Diligencia de descargos** | {diligence_date} |
+
+**Hechos / cargos:**
+
+> {charges}
 
 **CONSIDERACIONES:**
 
-Agotado el debido proceso conforme al art. 115 CST y art. 29 CN, habiendo garantizado
-al trabajador el derecho de audiencia, defensa y contradicción, esta empresa procede
-a emitir la siguiente decisión:
+Agotado el debido proceso conforme al artículo 115 del Código Sustantivo del Trabajo y
+al artículo 29 de la Constitución Política, habiendo garantizado al trabajador el
+derecho de audiencia, defensa y contradicción, y valorados los descargos rendidos, esta
+empresa procede a emitir la siguiente decisión:
 
-**DECISIÓN:** [La empresa aquí expone la sanción o absolución con fundamentos de hecho y derecho]
+**DECISIÓN:** _[La empresa expone aquí la sanción o absolución, con los fundamentos de
+hecho y de derecho que la sustentan.]_
 
-Esta decisión puede ser impugnada (doble instancia, Ley 2466/2025) ante un superior
-distinto de quien sancionó, dentro de los cinco (5) días hábiles siguientes.
-""",
+Contra esta decisión procede el recurso de impugnación (doble instancia) ante un
+superior distinto de quien la profirió, dentro de los cinco (5) días hábiles siguientes
+a su notificación.
+
+**{lawyer_name}**
+En representación de {company_name}
+"""
+
+_TPL = {
+    "citacion_descargos": _TPL_CITACION,
+    "acta_descargos": _TPL_ACTA,
+    "decision_final": _TPL_DECISION,
 }
+
+
+def _build_document(doc_type: str, ctx_doc: dict, state: DiligenceState) -> str:
+    """Rellena la plantilla del documento con la data real (determinista)."""
+    return _TPL[doc_type].format(**ctx_doc)
 
 _DECISION_BLOQUEADA = """\
 ## Decisión Final — BLOQUEADA por el Guardián
@@ -223,6 +303,12 @@ class DisciplinaryService:
         transcript = "\n".join(
             f"[{t.get('role')}] {t.get('message')}" for t in turns
         )
+        # Turnos estructurados (rol + mensaje) para renderizar la conversación completa.
+        turns_out = [
+            {"role": ("trabajador" if t.get("role") == "user" else "agente"),
+             "message": (t.get("message") or "").strip()}
+            for t in turns
+        ]
         dc = ((conv.get("analysis") or {}).get("data_collection_results")) or {}
 
         def _dcval(k: str):
@@ -242,7 +328,7 @@ class DisciplinaryService:
                            grounding=[conversation_id, status])
         return {
             "conversation_id": conversation_id, "status": status,
-            "transcript": transcript, "descargo": descargo,
+            "transcript": transcript, "turns": turns_out, "descargo": descargo,
             "diligence_state": state.__dict__, **verdict,
         }
 
@@ -267,6 +353,7 @@ class DisciplinaryService:
         )
         to = normalize_co(to_number)
         media = evidence_urls or []
+        names = evidence_names or []
         base = {"to": to, "body": body, "media": media,
                 "configured": self._wa.configured()}
         if not to:
@@ -274,11 +361,27 @@ class DisciplinaryService:
         if not self._wa.configured():
             # Demo-safe: el front muestra el mensaje que se enviaría al conectar Twilio.
             return {**base, "sent": False, "preview": True}
+        # WhatsApp solo entrega 1 adjunto por mensaje: si hay varias pruebas, se manda
+        # un mensaje por cada una (el primero con el cuerpo completo + prueba 1, los
+        # siguientes con un encabezado corto "Prueba N/M" + su adjunto).
         try:
-            res = self._wa.send(to, body=body, media_urls=media or None)
+            messages: list[dict] = []
+            if len(media) <= 1:
+                res = self._wa.send(to, body=body, media_urls=media or None)
+                messages.append(res)
+            else:
+                total = len(media)
+                for i, url in enumerate(media):
+                    if i == 0:
+                        msg_body = body
+                    else:
+                        nombre = names[i] if i < len(names) else f"adjunto {i + 1}"
+                        msg_body = f"Prueba {i + 1}/{total}: {nombre}"
+                    messages.append(self._wa.send(to, body=msg_body, media_urls=[url]))
             self._audit.record(ctx, "disciplinary.whatsapp.sent", ctx.tenant_id,
                                grounding=[to])
-            return {**base, "sent": True, **res}
+            # Compat: campos del primer mensaje al tope + lista completa en `messages`.
+            return {**base, "sent": True, "messages": messages, **messages[0]}
         except Exception as exc:  # noqa: BLE001
             return {**base, "sent": False, "error": str(exc)}
 
@@ -301,21 +404,27 @@ class DisciplinaryService:
 
     async def generate_documents(
         self, ctx: TenantContext, state: DiligenceState, transcript: str,
-        lawyer_name: str = "",
+        lawyer_name: str = "", *,
+        worker_name: str = "", worker_id: str = "", company_name: str = "",
+        charges: str = "", diligence_date: str = "",
     ) -> dict:
-        """Emite SIEMPRE los 3 documentos. La decisión se marca BLOQUEADA (sin lanzar)
-        si el guardián no permite proceder: el frontend la muestra vetada y la empresa
-        ve por qué. La citación y el acta no se bloquean.
+        """Emite SIEMPRE los 3 documentos con la DATA REAL del empleado (deterministas:
+        plantilla rellena, sin LLM → info garantizada y formato consistente). La decisión
+        se marca BLOQUEADA si el guardián no permite proceder.
 
-        `lawyer_name` firma el acta (el abogado que conduce y avala la diligencia)."""
+        `lawyer_name` firma; worker_name/worker_id/company_name/charges/diligence_date
+        son los datos reales del trabajador y el caso."""
         verdict = evaluate(state)
 
-        context = {
-            "worker_name": "[TRABAJADOR]",
-            "charges": "incumplimiento del reglamento interno de trabajo",
-            "date_time": "según acta",
-            "instructor": lawyer_name or "Jefe de Recursos Humanos",
-            "transcript_summary": (transcript[:400] + "...") if len(transcript) > 400 else transcript,
+        ctx_doc = {
+            "worker_name": worker_name or "[Trabajador sin identificar]",
+            "worker_id": worker_id or "—",
+            "company_name": company_name or "La empresa",
+            "charges": charges or "incumplimiento del reglamento interno de trabajo",
+            "diligence_date": diligence_date or "según citación",
+            "lawyer_name": lawyer_name or "Recursos Humanos",
+            "today": _fecha_es(_date.today()),
+            "transcript": transcript.strip() or "(El trabajador no rindió descargos.)",
         }
 
         documents = []
@@ -330,10 +439,7 @@ class DisciplinaryService:
                     vicios=vicios, recomendacion=verdict.recomendacion,
                 )
             else:
-                skeleton = _SKELETONS[doc_type].format(**context)
-                body = await self._llm.draft_document(doc_type, {
-                    "skeleton": skeleton, "figures": {}, "context": context,
-                })
+                body = _build_document(doc_type, ctx_doc, state)
             documents.append({
                 "type": doc_type,
                 "title": _DOC_TITLES[doc_type],

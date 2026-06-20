@@ -27,36 +27,95 @@
     --destructive: 1 70% 30%;
     --destructive-foreground: 30 20% 98%;
     --border: 20 14% 82%; /* Neutral cálido #D8D0CC */
-    --input: 20 14% 82%;
+    --input: 20 13% 66%; /* contorno de campo más perceptible que el separador */
     --ring: 1 70% 30%;
     --radius: 0.625rem;
 
-    /* ── Marca (aliases heredados para no cambiar estructura) ── */
-    --hg-carbon: #353535;
-    --hg-black: #000000;
-    --hg-gray: #776867;
-    --hg-red: #801817;
-    --hg-red-soft: #f2e8e7;
-    --hg-wine: #743537;
-    --cl-toga: var(--hg-carbon);
-    --cl-toga-700: var(--hg-black);
-    --cl-toga-300: var(--hg-gray);
-    --cl-indigo: var(--hg-red);
-    --cl-indigo-soft: var(--hg-red-soft);
+    /* ── Marca HG v1.1 · canales RGB (modo claro) ──
+       `carbon` y `lienzo` son FIJOS (superficies oscuras de marca + texto claro
+       sobre ellas). El resto invierte en `.dark`. */
+    --carbon: 53 53 53;
+    --carbon-700: 0 0 0;
+    --lienzo: 251 250 249;
 
-    /* ── Semáforo funcional HG (solo estados) ── */
-    --cl-ok: #2e7d32;
-    --cl-ok-fg: #2e7d32;
-    --cl-ok-soft: rgba(46, 125, 50, 0.12);
-    --cl-warn: #a16207;
-    --cl-warn-fg: #a16207;
-    --cl-warn-soft: rgba(161, 98, 7, 0.14);
-    --cl-risk: #801817;
-    --cl-risk-fg: #801817;
-    --cl-risk-soft: rgba(128, 24, 23, 0.1);
-    --cl-info: #94a0a9;
-    --cl-info-fg: #554b45;
-    --cl-info-soft: rgba(148, 160, 169, 0.14);
+    --toga: 53 53 53;
+    --toga-700: 0 0 0;
+    --toga-300: 119 104 103;
+    --acento: 128 24 23;
+    --acento-soft: 242 232 231;
+    --accion: 116 53 55;
+    --accion-soft: 245 231 230;
+    --surface: 255 255 255;
+    --n100: 244 241 239;
+    --n300: 216 208 204;
+    --body: 85 75 69;
+
+    --hg-gray: 119 104 103;
+    --hg-red: 128 24 23;
+    --hg-red-soft: 242 232 231;
+    --wine: 116 53 55;
+    --wine-soft: 245 231 230;
+
+    /* Semáforo funcional HG (solo estados) */
+    --ok: 46 125 50;
+    --ok-fg: 42 114 48; /* verde un punto más oscuro: AA (4.5:1) sobre el relleno soft */
+    --warn: 161 98 7;
+    --warn-fg: 140 84 8; /* ámbar de texto más oscuro: AA (4.5:1) sobre el relleno soft */
+    --risk: 128 24 23;
+    --risk-fg: 128 24 23;
+    --info: 148 160 169;
+    --info-fg: 85 75 69;
+  }
+
+  /* ── Modo oscuro HG ── */
+  .dark {
+    --background: 20 7% 8%; /* near-black cálido */
+    --foreground: 33 19% 91%;
+    --card: 15 6% 13%;
+    --card-foreground: 33 19% 91%;
+    --popover: 15 6% 13%;
+    --popover-foreground: 33 19% 91%;
+    --primary: 33 18% 90%; /* botón primario claro sobre oscuro */
+    --primary-foreground: 20 6% 9%;
+    --secondary: 20 7% 15%;
+    --secondary-foreground: 33 19% 91%;
+    --muted: 20 7% 15%;
+    --muted-foreground: 28 9% 63%;
+    --accent: 6 26% 18%; /* hover rojo vino oscuro */
+    --accent-foreground: 5 64% 66%;
+    --destructive: 4 70% 66%;
+    --destructive-foreground: 20 6% 9%;
+    --border: 30 10% 20%;
+    --input: 30 9% 32%; /* contorno de campo más perceptible en oscuro */
+    --ring: 5 64% 66%;
+
+    /* Marca · canales RGB (oscuro). carbon/lienzo NO cambian. */
+    --toga: 237 232 227; /* tinta clara */
+    --toga-700: 255 255 255;
+    --toga-300: 168 159 153; /* texto secundario aclarado */
+    --acento: 224 122 114; /* rojo HG aclarado para contraste */
+    --acento-soft: 58 36 34; /* superficie vino oscura */
+    --accion: 200 110 110;
+    --accion-soft: 58 36 34;
+    --surface: 34 31 30; /* cards */
+    --n100: 42 38 36; /* relleno sutil / hover */
+    --n300: 57 52 47; /* bordes */
+    --body: 199 192 186; /* lectura */
+
+    --hg-gray: 168 159 153;
+    --hg-red: 224 122 114;
+    --hg-red-soft: 58 36 34;
+    --wine: 200 110 110;
+    --wine-soft: 58 36 34;
+
+    --ok: 107 203 119;
+    --ok-fg: 122 199 130;
+    --warn: 224 163 58;
+    --warn-fg: 224 163 58;
+    --risk: 229 115 107;
+    --risk-fg: 229 115 107;
+    --info: 148 160 169;
+    --info-fg: 199 192 186;
   }
 
   * {
@@ -66,6 +125,9 @@
   html {
     color-scheme: light;
     scroll-behavior: smooth;
+  }
+  html.dark {
+    color-scheme: dark;
   }
 
   body {
@@ -98,8 +160,8 @@
   /* Chip de fuente — el sello de confianza (DESIGN.md §4). */
   .chip-fuente {
     @apply inline-flex cursor-pointer items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] leading-tight transition-colors;
-    background: var(--cl-indigo-soft);
-    color: var(--cl-indigo);
+    background: rgb(var(--acento-soft));
+    color: rgb(var(--acento));
   }
   .chip-fuente:hover {
     filter: brightness(0.94);
@@ -108,28 +170,28 @@
   /* Badges de estado (DESIGN.md §4). Relleno = color soft; texto = color fg. */
   .badge-calculado {
     @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
-    background: var(--cl-ok-soft);
-    color: var(--cl-ok-fg);
+    background: rgb(var(--ok) / 0.14);
+    color: rgb(var(--ok-fg));
   }
   .badge-revisar {
     @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
-    background: var(--cl-warn-soft);
-    color: var(--cl-warn-fg);
+    background: rgb(var(--warn) / 0.16);
+    color: rgb(var(--warn-fg));
   }
   .badge-revision-humana {
     @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
-    background: var(--cl-warn-soft);
-    color: var(--cl-warn-fg);
+    background: rgb(var(--warn) / 0.16);
+    color: rgb(var(--warn-fg));
   }
   .badge-bloqueado {
     @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
-    background: var(--cl-risk-soft);
-    color: var(--cl-risk-fg);
+    background: rgb(var(--risk) / 0.12);
+    color: rgb(var(--risk-fg));
   }
   .badge-info {
     @apply inline-flex items-center gap-1 rounded-sm px-2 py-0.5 font-mono text-[12px] font-medium leading-tight;
-    background: var(--cl-info-soft);
-    color: var(--cl-info-fg);
+    background: rgb(var(--info) / 0.16);
+    color: rgb(var(--info-fg));
   }
 }
 

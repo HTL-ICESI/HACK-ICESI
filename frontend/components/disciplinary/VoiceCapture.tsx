@@ -79,7 +79,7 @@ export function VoiceCapture() {
           onClick={toggle}
           className={cn(
             "flex size-11 items-center justify-center rounded-full text-lienzo transition-colors",
-            recording ? "bg-risk" : "bg-toga hover:bg-toga-700",
+            recording ? "bg-risk" : "bg-carbon hover:bg-carbon-700",
           )}
           aria-label={recording ? "Detener grabación" : "Grabar descargos"}
         >

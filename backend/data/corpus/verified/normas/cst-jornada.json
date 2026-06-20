@@ -1,0 +1,111 @@
+[
+  {
+    "id": "CST-160",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "160",
+    "radicado": null,
+    "epigrafe": "Trabajo diurno y nocturno",
+    "texto_literal": "1. Trabajo diurno es el que se realiza en el período comprendido entre las seis horas (6:00 a. m.) y las diecinueve horas (7:00 p. m.). 2. Trabajo nocturno es el que se realiza en el período comprendido entre las diecinueve horas (7:00 p. m.) y las seis horas del día siguiente (6:00 a. m.). Parágrafo 1. El Gobierno nacional implementará programas dirigidos a la generación y protección de empleos, de conformidad con la normatividad vigente en la materia. Parágrafo 2. Lo dispuesto en el presente artículo entrará en vigencia seis (6) meses después de la sanción de la presente Ley.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.10"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "jornada"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "jornada",
+      "trabajo-diurno",
+      "trabajo-nocturno",
+      "recargo-nocturno"
+    ]
+  },
+  {
+    "id": "CST-161",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "161",
+    "radicado": null,
+    "epigrafe": "Duración (jornada máxima legal)",
+    "texto_literal": "La duración máxima de la jornada ordinaria de trabajo es de ocho (8) horas al día, sin perjuicio de lo establecido en el artículo 3 de la Ley 2101 de 2021 sobre la aplicación gradual, y una jornada máxima de cuarenta y dos (42) horas a la semana. La jornada máxima semanal podrá ser distribuida, de común acuerdo, entre empleador y trabajador(a), de cinco (5) a seis (6) días a la semana, garantizando siempre el día de descanso y sin afectar el salario. El número de horas de trabajo diario podrá distribuirse de manera variable. Si en el horario pactado el trabajador o trabajadora debe laborar en jornada nocturna, tendrá derecho al pago de recargo nocturno. Se establecen las siguientes excepciones: a) El empleador y el trabajador o la trabajadora podrán acordar que la jornada semanal de cuarenta y dos (42) horas se realice mediante jornadas diarias flexibles de trabajo, distribuidas en máximo seis días a la semana con un día de descanso obligatorio, que podrá coincidir con el día domingo. Así, el número de horas de trabajo diario podrá distribuirse de manera variable durante la respectiva semana, teniendo como mínimo cuatro (4) horas continuas y máximo hasta nueve (9) horas diarias sin lugar a ningún recargo por trabajo suplementario, cuando el número de horas de trabajo no exceda el promedio de cuarenta y dos (42) horas semanales dentro de la Jornada Ordinaria. De conformidad con el artículo 160 del Código Sustantivo del Trabajo. b) En las labores que sean especialmente insalubres o peligrosas, el Gobierno puede ordenar la reducción de la jornada de trabajo de acuerdo con dictámenes al respecto. c) La duración máxima de la jornada laboral de los menores de edad, autorizados para trabajar, se sujetará a las siguientes reglas: 1. Los menores de edad entre los 15 y los 17 años, solo podrán trabajar en jornada diurna máxima de seis (6) horas diarias y treinta (30) horas a la semana. 2. Los menores de edad, mayores de diecisiete (17) años, solo podrán trabajar en una jornada máxima de ocho (8) horas diarias y cuarenta (40) horas a la semana. d) El empleador y el trabajador o la trabajadora pueden acordar, temporal o indefinidamente, la organización de turnos de trabajo sucesivos, que permitan operar a la empresa o secciones de esta, sin solución de continuidad durante todos los días de la semana, siempre y cuando el respectivo turno no exceda de seis (6) horas al día y treinta y seis (36) a la semana. En este caso no habrá lugar a recargo nocturno ni al previsto para el trabajo dominical o festivo, pero el trabajador devengará el salario correspondiente a la jornada ordinaria de trabajo, respetando siempre el mínimo legal o convencional y tendrá derecho a un día de descanso remunerado. Parágrafo 1. El empleador no podrá, aún con el consentimiento del trabajador o trabajadora, contratarla para la ejecución de dos turnos en el mismo día, salvo en labores de supervisión, dirección, confianza o manejo. Parágrafo 2. Los empleadores y las Cajas de Compensación podrán facilitar, promover y gestionar una jornada semestral en la que sus empleados puedan compartir con su familia en un espacio suministrado por aquellas.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2101/2021 art.2",
+      "Ley 2466/2025 art.11"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "jornada"
+    ],
+    "relaciones": [
+      {
+        "tipo": "modificado_por",
+        "destino": "L2101-2"
+      },
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "jornada-maxima",
+      "42-horas",
+      "jornada-flexible",
+      "turnos",
+      "menores-de-edad"
+    ]
+  },
+  {
+    "id": "CST-162",
+    "norma_id": "CST",
+    "norma": "Código Sustantivo del Trabajo (Decreto 2663 de 1950)",
+    "tipo": "ley",
+    "articulo": "162",
+    "radicado": null,
+    "epigrafe": "Excepciones en determinadas actividades",
+    "texto_literal": "1. Quedan excluidos de la regulación sobre la jornada máxima legal de trabajo los siguientes trabajadores: a) Los que desempeñan cargos de dirección, de confianza o de manejo; b) (Literal derogado por la Ley 2466 de 2025.) c) Los que ejerciten labores discontinuas o intermitentes y los de simple vigilancia, cuando residan en el lugar o sitio de trabajo; d) (Derogado por el artículo 56 del Decreto 1393 de 1970.) 2. El empleador deberá llevar un registro del trabajo suplementario de cada trabajador en el que se especifique el nombre, actividad desarrollada y número de horas laboradas con la precisión de si son diurnas o nocturnas. Este registro podrá realizarse de acuerdo a las necesidades y condiciones propias de su empresa. El empleador está obligado a entregar al trabajador que lo solicite, una relación de las horas extras laboradas, con las mismas especificaciones anteriores. Este registro deberá entregarse junto con el soporte que acredite el correspondiente pago. De igual modo, de ser requerido, estará obligado a aportar ante las autoridades judiciales y administrativas el registro de horas extras; de no hacerlo la autoridad administrativa del trabajo podrá imponer las sanciones a las que haya lugar. Parágrafo. No se requerirá permiso del Ministerio del Trabajo para laborar horas extras. Sin embargo, cuando se demuestre que el empleador no remunera a sus trabajadores el tiempo suplementario, el Ministerio podrá imponer como sanción que a dicho empleador se le suspenda la facultad de autorizar que se trabaje tiempo suplementario por el término de seis (6) meses, sin perjuicio de las otras sanciones que disponga la ley.",
+    "texto_verificado": true,
+    "vigencia": "vigente (reformado por Ley 2466/2025)",
+    "modificado_por": [
+      "Ley 2466/2025 art.12"
+    ],
+    "fuente": "PDF oficial (Función Pública / Diario Oficial)",
+    "fuente_url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=33104",
+    "fecha_consulta": "2026-06-18",
+    "consumido_por": [
+      "jornada"
+    ],
+    "relaciones": [
+      {
+        "tipo": "complementa",
+        "destino": "CST-161"
+      },
+      {
+        "tipo": "modificado_por",
+        "destino": "L2466-REFORMA"
+      }
+    ],
+    "etiquetas": [
+      "jornada",
+      "registro-horas-extras",
+      "trabajo-suplementario",
+      "excepciones-jornada"
+    ]
+  }
+]

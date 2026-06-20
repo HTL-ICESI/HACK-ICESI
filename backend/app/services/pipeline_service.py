@@ -178,6 +178,17 @@ class PipelineService:
         """Bytes + content_type de una evidencia, tenant-scoped. None si no existe."""
         return self._blobs.get(f"{ctx.require()}:{evidence_id}")
 
+    def stash_blob(self, ctx: TenantContext, filename: str, file_bytes: bytes,
+                   content_type: str) -> str:
+        """Guarda un blob suelto (p.ej. un documento generado en PDF) y devuelve su
+        id, servible por el mismo endpoint /media/evidence con URL firmada."""
+        import uuid as _uuid
+        blob_id = str(_uuid.uuid4())
+        self._blobs[f"{ctx.require()}:{blob_id}"] = {
+            "bytes": file_bytes, "content_type": content_type, "filename": filename,
+        }
+        return blob_id
+
     def build_evidence_media(
         self, ctx: TenantContext, process_id: str, backend_host: str,
     ) -> tuple[list[str], list[str]]:

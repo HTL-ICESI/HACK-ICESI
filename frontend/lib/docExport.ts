@@ -61,10 +61,10 @@ export function markdownToHtml(md: string): string {
       continue;
     }
 
-    const h = line.match(/^(#{1,3})\s+(.*)$/);
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
     if (h) {
       closeList();
-      const level = h[1].length + 1; // ## -> h3 visual; mantiene jerarquía
+      const level = h[1].length; // # -> h1 (título), ## -> h2, ### -> h3
       out.push(`<h${level}>${inline(h[2])}</h${level}>`);
       i++;
       continue;
@@ -114,9 +114,20 @@ function slugify(s: string): string {
 }
 
 const PRINT_CSS =
-  "body{font-family:Georgia,'Times New Roman',serif;color:#1a1a2e;max-width:720px;margin:32px auto;line-height:1.55;padding:0 16px}" +
-  "h2,h3,h4{font-family:Arial,sans-serif;color:#11113a}table{margin:12px 0}th,td{border:1px solid #999;padding:6px 8px;text-align:left}" +
-  "blockquote{font-style:italic}hr{border:none;border-top:1px solid #ccc;margin:16px 0}";
+  // Fuerza tema CLARO: sin esto, el PDF hereda el dark mode del navegador y sale negro.
+  ":root{color-scheme:light}" +
+  "html,body{background:#ffffff!important;color:#1a1a2e!important}" +
+  "body{font-family:Georgia,'Times New Roman',serif;max-width:720px;margin:32px auto;line-height:1.6;padding:0 24px}" +
+  "h1{font-family:Arial,sans-serif;color:#11113a;font-size:20px;text-align:center;letter-spacing:.3px;margin:0 0 18px;border-bottom:2px solid #801817;padding-bottom:10px}" +
+  "h2,h3,h4{font-family:Arial,sans-serif;color:#11113a;margin-top:18px}" +
+  "p{margin:.6em 0}" +
+  "strong{color:#11113a}" +
+  "table{margin:14px 0;width:100%;border-collapse:collapse}" +
+  "th,td{border:1px solid #cfcabf;padding:7px 10px;text-align:left;vertical-align:top}" +
+  "th{background:#f3f1ef}" +
+  "blockquote{font-style:italic;border-left:3px solid #801817;margin:12px 0;padding:4px 14px;color:#33302c;background:#faf8f6}" +
+  "hr{border:none;border-top:1px solid #ccc;margin:18px 0}" +
+  "ul,ol{margin:.5em 0 .5em 1.2em}";
 
 /**
  * Descarga el borrador como .docx (Word XML en HTML-in-Word, compatible con
